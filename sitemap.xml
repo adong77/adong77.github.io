@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
+    
+    <lastmod>2018-01-05T00:29:58.095Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2017/08/26/multiple-testing/</loc>
+    
+    <lastmod>2018-01-05T00:22:42.772Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
     
     <lastmod>2018-01-03T01:42:37.184Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
     
     <lastmod>2017-08-26T00:40:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2017/08/26/multiple-testing/</loc>
-    
-    <lastmod>2017-08-26T00:35:34.000Z</lastmod>
     
   </url>
   
