@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2018-01-05T00:29:58.095Z</updated>
+  <updated>2018-01-25T00:57:08.976Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows下连接远程Linux桌面</title>
+    <link href="http://blog.ligene.cn/2018/01/25/Xming-PuTTY/"/>
+    <id>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</id>
+    <published>2018-01-25T00:45:16.000Z</published>
+    <updated>2018-01-25T00:57:08.976Z</updated>
+    
+    <content type="html"><![CDATA[<p>一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。<br><a id="more"></a></p><h2 id="1-Windows安装Xming"><a href="#1-Windows安装Xming" class="headerlink" title="1. Windows安装Xming"></a>1. Windows安装Xming</h2><p>从SourceForge下载Xming-setup.exe（最新的版本是6.9.0.31）。<br>Xming的SourceForge网址： <a href="http://sourceforge.net/projects/xming/" target="_blank" rel="noopener">http://sourceforge.net/projects/xming/</a><br>本地安装，安装过程一切按默认选项。<br>第一次运行时，找到开始菜单里面的XLaunch来启动，产生一个初始的配置文件。对于简单的使用来说，不需要任何特殊的配置，使用默认即可。<br>下图中选择“one window”，设置“Display number”中的数字为0。<br><img src="/downloads/Xming.png" alt="Xming Setup"><br>  启动完成后，在任务栏右边会出现一个“X”形状的图标，这表示Xming已经在运行了，将鼠标悬停上去，能看到当前使用的“Display number”使用默认的0.0。</p><h2 id="2-Linux服务器配置"><a href="#2-Linux服务器配置" class="headerlink" title="2. Linux服务器配置"></a>2. Linux服务器配置</h2><p> 修改ssh服务的配置文件：<br><code>$vi /etc/ssh/sshd_config</code><br>取消下面一行的注释，如果没有这一行则手动添加：<br>X11Forwrding yes<br>这样配置的作用就是允许SSH的X转发。</p><h2 id="3-PuTTY设置"><a href="#3-PuTTY设置" class="headerlink" title="3. PuTTY设置"></a>3. PuTTY设置</h2><p>SSH客户端使用PuTTY，PuTTY是freeware+greenware。<br>PuTTY下载网址：<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a><br>配置 Session：配置linux服务器IP，连接方式为SSH<br>Connection &gt; Data：保存连接使用的用户名<br>Connection &gt; SSH &gt; X11：Enable X11 Forwarding，X display Location 为 “localhost:0”，这里的 0 就是配置 Xming X server 时指定的 Display Number。<br>保存设置：选Session，Saved sessions输入一个名称，并按右边Save按钮。每次更改PuTTY设置都需要这样保存，下次Load这个Session才是同样的设置。<br><img src="/downloads/putty.png" alt="putty Setup"><br> 至此配置完成。<br>在windows上使用PuTTY连接到Linux服务器，输入xclock &amp;，可以看到X server工作效果了，显示一个时钟图形界面。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://blog.ligene.cn/categories/Tools/"/>
+    
+    
+      <category term="Linux" scheme="http://blog.ligene.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>编程语言之C语言</title>
@@ -262,9 +284,9 @@
       <category term="Tools" scheme="http://blog.ligene.cn/categories/Tools/"/>
     
     
-      <category term="GitHub" scheme="http://blog.ligene.cn/tags/GitHub/"/>
-    
       <category term="Hexo" scheme="http://blog.ligene.cn/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://blog.ligene.cn/tags/GitHub/"/>
     
   </entry>
   
