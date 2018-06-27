@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/about/index.html</loc>
+    
+    <lastmod>2018-06-27T22:08:52.916Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
     
     <lastmod>2018-06-27T21:58:48.288Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
     
     <lastmod>2018-01-03T01:42:37.184Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/about/index.html</loc>
-    
-    <lastmod>2017-11-29T03:36:24.000Z</lastmod>
     
   </url>
   
