@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/01/hello-world/</loc>
+    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
     
-    <lastmod>2018-01-25T01:14:20.132Z</lastmod>
+    <lastmod>2018-06-27T21:58:48.288Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
     
-    <lastmod>2018-01-25T00:57:08.976Z</lastmod>
+    <lastmod>2018-06-27T21:58:04.693Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
+    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
     
-    <lastmod>2018-01-05T00:29:58.095Z</lastmod>
+    <lastmod>2018-06-27T21:56:36.432Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2018/01/01/hello-world/</loc>
+    
+    <lastmod>2018-01-25T01:14:20.132Z</lastmod>
     
   </url>
   
@@ -61,13 +68,6 @@
     <loc>http://blog.ligene.cn/2017/07/20/Microbiome-visualization/</loc>
     
     <lastmod>2017-09-03T06:06:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
-    
-    <lastmod>2017-09-03T06:04:22.000Z</lastmod>
     
   </url>
   
