@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.ligene.cn/BiGbook/index.html</loc>
+    <loc>http://blog.ligene.cn/downloads/index.html</loc>
     
     <lastmod>2018-07-22T02:34:02.574Z</lastmod>
     
@@ -54,13 +54,6 @@
     <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
     
     <lastmod>2018-01-03T01:42:37.184Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/downloads/index.html</loc>
-    
-    <lastmod>2017-11-02T07:44:34.000Z</lastmod>
     
   </url>
   
