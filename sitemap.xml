@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
+    
+    <lastmod>2018-08-15T16:52:06.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2017/07/04/notepad2/</loc>
+    
+    <lastmod>2018-08-15T16:51:22.342Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/about/index.html</loc>
     
     <lastmod>2018-08-15T16:33:07.480Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
-    
-    <lastmod>2018-08-15T15:21:50.407Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2018/01/01/hello-world/</loc>
     
     <lastmod>2018-08-14T12:51:51.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2017/07/04/notepad2/</loc>
-    
-    <lastmod>2018-08-02T04:02:41.713Z</lastmod>
     
   </url>
   
