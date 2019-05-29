@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2018-10-17T12:27:00.513Z</updated>
+  <updated>2018-06-27T21:58:04.693Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>实验报告的写作</title>
-    <link href="http://blog.ligene.cn/2018/10/17/lab-report/"/>
-    <id>http://blog.ligene.cn/2018/10/17/lab-report/</id>
-    <published>2018-10-17T12:12:26.000Z</published>
-    <updated>2018-10-17T12:27:00.513Z</updated>
-    
-    <content type="html"><![CDATA[<p>附件：实验报告的模板<br><a id="more"></a></p><h1 id="实验名称（三号黑体居中）"><a href="#实验名称（三号黑体居中）" class="headerlink" title="实验名称（三号黑体居中）"></a>实验名称（三号黑体居中）</h1><p>（空一行）<br>实验者姓名（及同组同学姓名）、班级、学号、实验时间（小四仿宋体居中）<br>（空一行）<br>摘要（五号黑体）摘要的目的是让读者确定他是否有必要读完报告的所有内容，主要从做什么，为什么做，怎么做，做的结果怎么样这四个方面来写，让读者看完之后对全文都有一个准确的把握，篇幅一般控制在200-300字。（摘要内容五号楷体）<br>（空二行）</p><h2 id="1-实验原理（一级标题小四号黑体）"><a href="#1-实验原理（一级标题小四号黑体）" class="headerlink" title="1 实验原理（一级标题小四号黑体）"></a>1 实验原理（一级标题小四号黑体）</h2><p>可写实验目的、原理或相关的背景知识，让读者对论文背景有一定的了解，并在这些知识背景的基础上来进行后续阅读。（正文5号宋体，正文不要像期刊那样分栏排版）</p><h2 id="2-材料与方法（一级标题小四号黑体）"><a href="#2-材料与方法（一级标题小四号黑体）" class="headerlink" title="2 材料与方法（一级标题小四号黑体）"></a>2 材料与方法（一级标题小四号黑体）</h2><h3 id="2-1-实验材料（二级标题五号黑体）"><a href="#2-1-实验材料（二级标题五号黑体）" class="headerlink" title="2.1 实验材料（二级标题五号黑体）"></a>2.1 实验材料（二级标题五号黑体）</h3><p>试验中所涉及的所有材料、药品、仪器，需标明来源、厂家及型号。（正文5号宋体，此处与下文的标题仅是示例，根据不同实验要有所变化。）</p><h3 id="2-2-实验方法（二级标题五号黑体）"><a href="#2-2-实验方法（二级标题五号黑体）" class="headerlink" title="2.2 实验方法（二级标题五号黑体）"></a>2.2 实验方法（二级标题五号黑体）</h3><h4 id="2-2-1-××实验步骤（三级标题五号楷体）"><a href="#2-2-1-××实验步骤（三级标题五号楷体）" class="headerlink" title="2.2.1 ××实验步骤（三级标题五号楷体）"></a>2.2.1 ××实验步骤（三级标题五号楷体）</h4><p>简述实验过程及数据处理等的具体方法，便于读者进行参考借用，信息全面但不累赘，如果使用方法与文献上完全相同，只需简单地写“××方法见××文献”，然后在参考文献中列出此文献即可。（正文5号宋体）</p><h2 id="3-结果（一级标题小四号黑体）"><a href="#3-结果（一级标题小四号黑体）" class="headerlink" title="3 结果（一级标题小四号黑体）"></a>3 结果（一级标题小四号黑体）</h2><h3 id="3-1-××实验结果（二级标题五号黑体）"><a href="#3-1-××实验结果（二级标题五号黑体）" class="headerlink" title="3.1 ××实验结果（二级标题五号黑体）"></a>3.1 ××实验结果（二级标题五号黑体）</h3><h4 id="3-1-1-第一个实验数据及详解（三级标题五号楷体）"><a href="#3-1-1-第一个实验数据及详解（三级标题五号楷体）" class="headerlink" title="3.1.1 第一个实验数据及详解（三级标题五号楷体）"></a>3.1.1 第一个实验数据及详解（三级标题五号楷体）</h4><p>数据是对实验结果最好的支撑工具，有数据才能说明实验的真实有效性，一般需要用图表展示。（正文5号宋体）<br>图片上可加箭头、画圈等标注重要结果，分图要加上图序a, b, c等。（图题小五号黑体，居中对齐，图注与图内容小五号宋体)<br>表格一般用“三线表”。（表题小五号黑体，左对齐；表注六号宋体，左对齐；表内容小五号宋体)</p><h2 id="4-讨论（一级标题小四号黑体）"><a href="#4-讨论（一级标题小四号黑体）" class="headerlink" title="4 讨论（一级标题小四号黑体）"></a>4 讨论（一级标题小四号黑体）</h2><p>对实验结果所得数据的意义与存在的问题进行探讨。（正文5号宋体）<br>（空二行）</p><h2 id="参考文献（小四号黑体居中）"><a href="#参考文献（小四号黑体居中）" class="headerlink" title="参考文献（小四号黑体居中）"></a>参考文献（小四号黑体居中）</h2><p>（空一行）<br>[1]李光雷,喻树迅,范术丽等.表观遗传学研究进展[J].生物技术通报,2011(01):40-49.<br>[2]Li Y, Wei GY, Chen J. Glutathione: a review on biotechnological production[J]. Applied Microbiology and Biotechnology, 2004, 66(3): 233–242.<br>（参考文献中文用小5号宋体，英文和数字用小5号Times New Roman字体)</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;附件：实验报告的模板&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
-    
-    
-      <category term="lab" scheme="http://blog.ligene.cn/tags/lab/"/>
-    
-  </entry>
   
   <entry>
     <title>Windows下连接远程Linux桌面</title>
