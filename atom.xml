@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2019-06-09T09:39:59.776Z</updated>
+  <updated>2019-06-09T09:42:57.865Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.ligene.cn/2019/06/09/proxy4GFW/"/>
     <id>http://blog.ligene.cn/2019/06/09/proxy4GFW/</id>
     <published>2019-06-09T05:22:55.000Z</published>
-    <updated>2019-06-09T09:39:59.776Z</updated>
+    <updated>2019-06-09T09:42:57.865Z</updated>
     
-    <content type="html"><![CDATA[<p>国内使用google需要翻墙，或科学上网。Hoxx/SetupVPN是最简单的一个翻墙软件。<br>SetupVPN/Hoxx插件适用于浏览器Chrome或Firefox，此处使用Chrome与SetupVPN。<br><a id="more"></a></p><p>##1:获取一个chrome拓展程序<br>在地址栏输入<a href="http://69.28.91.10/，会出现如下界面：" target="_blank" rel="noopener">http://69.28.91.10/，会出现如下界面：</a><br><img src="/downloads/img/setupVPN_1.png" alt="SetupVPN"><br>请按照红圈依次点击，找到我们需要的文件chrome setupvpn 2.3.0.crx，下载这个.crx为后缀的文件，即谷歌浏览器的拓展程序文件。<br><img src="/downloads/img/setupVPN_2.png" alt="SetupVPN"></p><p>##2: 安装chrome的拓展程序<br>在谷歌浏览器的地址栏输入chrome://extensions/，打开我们的拓展程序栏，会出现如下的拓展程序界面。只要把刚刚下载的.crx文件拖入这个栏里面就ok了（不要忘记点启用）。<br><img src="/downloads/img/setupVPN_3.png" alt="SetupVPN"></p><p>##3:注册并且使用setupvpn安装扩展程序<br>安装成功后，重启chrome，就在右上角可以看到一个云状图标。SetupVPN图标点开之后就是注册环节，很简单，一个邮箱即可，后续也不会有垃圾邮件。<br><img src="/downloads/img/setupVPN_4.png" alt="SetupVPN"><br>注册完毕登录以后就可以选择世界各地的服务器，建议选择日本，会比较快一点。 选择后点击盾状图标即可开始科学上网，畅游外面的世界。</p>]]></content>
+    <content type="html"><![CDATA[<p>国内使用google需要翻墙，或科学上网。Hoxx/SetupVPN是最简单的一个翻墙软件。<br>SetupVPN/Hoxx插件适用于浏览器Chrome或Firefox，此处使用Chrome与SetupVPN。<br><a id="more"></a></p><p>##1:获取一个chrome拓展程序<br>在地址栏输入<a href="http://69.28.91.10/，会出现如下界面：" target="_blank" rel="noopener">http://69.28.91.10/，会出现如下界面：</a><br><img src="/downloads/img/setupVPN-1.png" alt="SetupVPN"><br>请按照红圈依次点击，找到我们需要的文件chrome setupvpn 2.3.0.crx，下载这个.crx为后缀的文件，即谷歌浏览器的拓展程序文件。<br><img src="/downloads/img/setupVPN-2.png" alt="SetupVPN"></p><p>##2: 安装chrome的拓展程序<br>在谷歌浏览器的地址栏输入chrome://extensions/，打开我们的拓展程序栏，会出现如下的拓展程序界面。只要把刚刚下载的.crx文件拖入这个栏里面就ok了（不要忘记点启用）。<br><img src="/downloads/img/setupVPN-3.png" alt="SetupVPN"></p><p>##3:注册并且使用setupvpn安装扩展程序<br>安装成功后，重启chrome，就在右上角可以看到一个云状图标。SetupVPN图标点开之后就是注册环节，很简单，一个邮箱即可，后续也不会有垃圾邮件。<br><img src="/downloads/img/setupVPN-4.png" alt="SetupVPN"><br>注册完毕登录以后就可以选择世界各地的服务器，建议选择日本，会比较快一点。 选择后点击盾状图标即可开始科学上网，畅游外面的世界。</p>]]></content>
     
     <summary type="html">
     
