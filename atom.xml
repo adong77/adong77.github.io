@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2019-06-09T23:48:17.354Z</updated>
+  <updated>2019-06-09T23:54:38.647Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>简易翻墙方法</title>
+    <title>科学上网简易方法</title>
     <link href="http://blog.ligene.cn/2019/06/09/proxy4GFW/"/>
     <id>http://blog.ligene.cn/2019/06/09/proxy4GFW/</id>
     <published>2019-06-09T05:22:55.000Z</published>
-    <updated>2019-06-09T23:48:17.354Z</updated>
+    <updated>2019-06-09T23:54:38.647Z</updated>
     
-    <content type="html"><![CDATA[<p>如果你不能打开一些国外的网址，如google，那么就需要科(翻)学(墙)上网了。SetupVPN(或Hoxx)是一个简单易用的免费工具。SetupVPN/Hoxx插件适用于浏览器Chrome或Firefox，此处介绍使用Firefox与SetupVPN。<br><a id="more"></a></p><h2 id="1-获取一个Firefox拓展程序"><a href="#1-获取一个Firefox拓展程序" class="headerlink" title="1.获取一个Firefox拓展程序"></a>1.获取一个Firefox拓展程序</h2><p>在地址栏输入<a href="http://69.28.91.10/，会出现如下页面：" target="_blank" rel="noopener">http://69.28.91.10/，会出现如下页面：</a><br><img src="/downloads/img/setupVPN-1.png" alt="SetupVPN"><br>请按照红圈依次点击，找到Firefox的拓展程序文件setupvpn_lifetime_free_vpn-3.5.3-fx.xpi（或其它版本文件），按鼠标右键在弹出菜单选择“链接另存为”，下载这个文件。</p><h2 id="2-安装Firefox的拓展程序"><a href="#2-安装Firefox的拓展程序" class="headerlink" title="2.安装Firefox的拓展程序"></a>2.安装Firefox的拓展程序</h2><p>在Firefox地址栏中输入about:addons，打开拓展程序界面。只要把刚刚下载的.xpi文件拖入这个界面里，并在弹出的安装确认选项中选择添加(Add)按钮就OK了。<br><img src="/downloads/img/setupVPN-2.png" alt="SetupVPN"></p><h2 id="3-注册并使用SetupVPN扩展程序"><a href="#3-注册并使用SetupVPN扩展程序" class="headerlink" title="3.注册并使用SetupVPN扩展程序"></a>3.注册并使用SetupVPN扩展程序</h2><p>安装成功后，就在Firefox浏览器右上角可以看到一个云状图标。首次点击SetupVPN图标需要用一个邮箱注册新账户，并通过邮件激活帐户，后续也不会有垃圾邮件。<br><img src="/downloads/img/setupVPN-3.png" alt="SetupVPN"><br>注册帐户登录后，可以在下方免费服务器里选择一个国家，建议选择日本，会比较快一点。建立连接后即可开始畅游外面的世界。</p>]]></content>
+    <content type="html"><![CDATA[<p>如果你不能打开一些国外的网址，如google，那么就需要科(翻)学(墙)上网了。SetupVPN(或Hoxx)是一个简单易用的免费工具。SetupVPN/Hoxx插件适用于浏览器Chrome或Firefox，此处介绍使用Firefox与SetupVPN。<br><a id="more"></a></p><h2 id="1-获取一个Firefox拓展程序"><a href="#1-获取一个Firefox拓展程序" class="headerlink" title="1.获取一个Firefox拓展程序"></a>1.获取一个Firefox拓展程序</h2><p>在地址栏输入<a href="http://69.28.91.10/，会出现如下页面：" target="_blank" rel="noopener">http://69.28.91.10/，会出现如下页面：</a><br><img src="/downloads/img/setupVPN-1.png" alt="SetupVPN-1"><br>请按照红圈依次点击，找到Firefox的拓展程序文件setupvpn_lifetime_free_vpn-3.5.3-fx.xpi（或其它版本文件），按鼠标右键在弹出菜单选择“链接另存为”，下载这个文件。</p><h2 id="2-安装Firefox的拓展程序"><a href="#2-安装Firefox的拓展程序" class="headerlink" title="2.安装Firefox的拓展程序"></a>2.安装Firefox的拓展程序</h2><p>在Firefox地址栏中输入about:addons，打开拓展程序界面。只要把刚刚下载的.xpi文件拖入这个界面里，并在弹出的安装确认选项中选择添加(Add)按钮就OK了。<br><img src="/downloads/img/setupVPN-2.png" alt="SetupVPN-2"></p><h2 id="3-注册并使用SetupVPN扩展程序"><a href="#3-注册并使用SetupVPN扩展程序" class="headerlink" title="3.注册并使用SetupVPN扩展程序"></a>3.注册并使用SetupVPN扩展程序</h2><p>安装成功后，就在Firefox浏览器右上角可以看到一个云状图标。首次点击SetupVPN图标需要用一个邮箱注册新账户，并通过邮件激活帐户，后续也不会有垃圾邮件。<br><img src="/downloads/img/setupVPN-3.png" alt="SetupVPN-3"><br>注册帐户登录后，可以在下方免费服务器里选择一个国家，建议选择日本，会比较快一点。建立连接后即可开始畅游外面的世界。</p>]]></content>
     
     <summary type="html">
     
@@ -306,9 +306,9 @@
       <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
     
     
-      <category term="Hexo" scheme="http://blog.ligene.cn/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://blog.ligene.cn/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://blog.ligene.cn/tags/Hexo/"/>
     
   </entry>
   
