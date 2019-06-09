@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2018-06-27T21:58:04.693Z</updated>
+  <updated>2019-06-09T05:43:09.570Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简易翻墙指南</title>
+    <link href="http://blog.ligene.cn/2019/06/09/proxy4GFW/"/>
+    <id>http://blog.ligene.cn/2019/06/09/proxy4GFW/</id>
+    <published>2019-06-09T05:22:55.000Z</published>
+    <updated>2019-06-09T05:43:09.570Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要:<br>科学上网方法，Chrome或Firefox都可使用SetupVPN或Hoxx插件。<br><a id="more"></a></p><p>###1:下载并安装chrome</p><p>###2:获取一个chrome拓展程序<br>在地址栏输入<a href="http://69.28.91.10/会出现如下界面：" target="_blank" rel="noopener">http://69.28.91.10/会出现如下界面：</a><br><img src="/pics/SetupVPN_1.png" alt=""><br>请按照红圈依次点击，找到我们需要的文件chrome setupvpn 2.3.0.crx，下载这个.crx为后缀的文件，即谷歌浏览器的拓展程序文件。</p><p>###3:安装chrome的拓展程序<br>在谷歌浏览器的地址栏输入chrome://extensions/打开我们的拓展程序栏，会出现如下的界面拓展程序界面,只要把我们刚刚下载的.crx文件拖入这个栏里面就ok了，就像把某个文件拖入文件夹一样简单。（不要忘记点启用）<br><img src="/pics/SetupVPN_2.png" alt=""></p><p>###4:注册并且使用setupvpn安装扩展程序<br>安装成功后，重启一下chrome。在右上角可以看到一个云状图标。<br><img src="/pics/SetupVPN_3.png" alt=""><br>setupVPN图标点开之后就是注册环节，很简单，一个邮箱即可，后续也不会有垃圾邮件过来。<br>注册完毕登录以后就可以选择世界各地的服务器，建议选择日本，会比较快一点。 选择后点击盾状图标即可开始科学合理的上网。<br>作者：doG_Like</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘要:&lt;br&gt;科学上网方法，Chrome或Firefox都可使用SetupVPN或Hoxx插件。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
+    
+    
+      <category term="Web" scheme="http://blog.ligene.cn/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows下连接远程Linux桌面</title>
