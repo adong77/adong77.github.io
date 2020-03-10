@@ -1,2 +1,2 @@
-adong's blog: **Some notes for bioinformatics and genomics.**
+adong's blog: **Notes for bioinformatics and genomics.**
 
