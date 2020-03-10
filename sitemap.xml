@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/2020/03/11/A-primer-on-AI/</loc>
+    
+    <lastmod>2020-03-10T21:59:18.448Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/2017/07/20/Microbiome-visualization/</loc>
     
     <lastmod>2020-03-10T21:03:51.129Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.ligene.cn/2019/06/09/SetupVPN/</loc>
     
     <lastmod>2020-03-10T20:58:01.027Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2020/03/11/A-primer-on-AI/</loc>
-    
-    <lastmod>2020-03-10T20:32:38.153Z</lastmod>
     
   </url>
   
