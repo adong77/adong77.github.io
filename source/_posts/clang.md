@@ -31,4 +31,4 @@ printf("Hello World!");
 `$./helloworld`
 //输出"Hello World!"。
  
-![C programming](/imageBed/cprogramming.png)
+![C programming](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/cprogramming.png)

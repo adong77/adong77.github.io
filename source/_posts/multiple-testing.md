@@ -19,7 +19,7 @@ Benjamini于1995年提出一种方法，通过控制FDR(False Discovery Rate)来
 
 ### FDR计算
 FDR的计算方法除了可以使用excel的BH计算方法外，对于较大的数据，我们推荐使用R命令p.adjust。
-![p.adjust](/imageBed/fdr_padjust.png)
+![p.adjust](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/fdr_padjust.png)
 该函数的运算需要先将一系列p值、设定一个校正方法（p.adjust.methods）及所有p值的个数（length(p)）输入到p.adjust函数中。返回结果为校正后的P值，可以用于后续分析了。
 
 ### FDR与p-value区别
