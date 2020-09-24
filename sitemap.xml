@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/2020/09/24/GenomeBrowser/</loc>
+    
+    <lastmod>2020-09-24T04:59:43.282Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
     
     <lastmod>2020-08-25T05:16:20.563Z</lastmod>
@@ -37,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2017/10/13/references/</loc>
+    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
     
     <lastmod>2020-08-25T04:55:20.079Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
+    <loc>http://blog.ligene.cn/2017/10/13/references/</loc>
     
     <lastmod>2020-08-25T04:55:20.079Z</lastmod>
     
@@ -93,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
-    
-    <lastmod>2020-08-25T04:55:20.028Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
     
     <lastmod>2020-08-25T04:55:20.028Z</lastmod>
@@ -107,14 +107,21 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2019/06/09/SetupVPN/</loc>
+    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
+    
+    <lastmod>2020-08-25T04:55:20.028Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
     
     <lastmod>2020-08-25T04:55:20.018Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
+    <loc>http://blog.ligene.cn/2019/06/09/SetupVPN/</loc>
     
     <lastmod>2020-08-25T04:55:20.018Z</lastmod>
     
