@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2020/03/19/ncov-tree/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2018/01/01/hello-world/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2021/02/25/findNum/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
+    
+    <lastmod>2022-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/about/index.html</loc>
     
     <lastmod>2022-02-22</lastmod>
@@ -23,24 +86,6 @@
     <loc>http://blog.ligene.cn/2021/08/05/SMS/</loc>
     
     <lastmod>2021-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
-    
-    <lastmod>2021-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2021/02/25/findNum/</loc>
-    
-    <lastmod>2021-02-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -92,15 +137,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2017/10/13/references/</loc>
     
     <lastmod>2020-08-25</lastmod>
@@ -111,15 +147,6 @@
   
   <url>
     <loc>http://blog.ligene.cn/2017/07/04/notepad2/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2020/03/19/ncov-tree/</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -146,15 +173,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/01/hello-world/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2020/04/08/ghelper/</loc>
     
     <lastmod>2020-08-25</lastmod>
@@ -164,25 +182,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2019/06/09/SetupVPN/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -369,14 +369,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/categories/Linux/</loc>
-    <lastmod>2022-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/categories/Programming/</loc>
+    <loc>http://blog.ligene.cn/categories/Computing/</loc>
     <lastmod>2022-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
