@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.ligene.cn/2022/02/21/JianShu/</loc>
+    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
     
     <lastmod>2022-02-23</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</loc>
+    <loc>http://blog.ligene.cn/2021/08/05/SMS/</loc>
     
-    <lastmod>2022-02-22</lastmod>
+    <lastmod>2022-02-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,43 @@
   <url>
     <loc>http://blog.ligene.cn/2017/09/03/qiime-install/</loc>
     
-    <lastmod>2022-02-22</lastmod>
+    <lastmod>2022-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2021/02/25/findNum/</loc>
+    
+    <lastmod>2022-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
+    
+    <lastmod>2022-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
+    
+    <lastmod>2022-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/2022/02/21/JianShu/</loc>
+    
+    <lastmod>2022-02-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -47,45 +83,9 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/2021/02/25/findNum/</loc>
-    
-    <lastmod>2022-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2018/01/05/clang/</loc>
-    
-    <lastmod>2022-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2017/08/26/binfo-JS/</loc>
-    
-    <lastmod>2022-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/about/index.html</loc>
     
     <lastmod>2022-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/2021/08/05/SMS/</loc>
-    
-    <lastmod>2021-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -369,7 +369,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/categories/Computing/</loc>
+    <loc>http://blog.ligene.cn/categories/Programming/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

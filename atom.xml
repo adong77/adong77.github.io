@@ -43,7 +43,7 @@
     <link href="http://blog.ligene.cn/2021/08/05/SMS/"/>
     <id>http://blog.ligene.cn/2021/08/05/SMS/</id>
     <published>2021-08-05T09:42:27.000Z</published>
-    <updated>2021-08-05T09:44:34.456Z</updated>
+    <updated>2022-02-23T13:58:25.639Z</updated>
     
     <content type="html"><![CDATA[<p>SMS (Sequence Manipulation Suite)是一个生物序列分析工具的集合。</p><span id="more"></span><p>SMS由JavaScript编写，使用十分方便，只要浏览器打开SMS网站(<a href="http://www.bioinformatics.org/sms2/index.html)%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C%E8%BF%99%E4%BA%9B%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E3%80%82%E4%BD%86%E5%9C%A8%E7%BA%BF%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%83%BD%E5%8F%97%E7%94%B5%E8%84%91%E7%BD%91%E7%BB%9C%E9%80%9F%E5%BA%A6%E7%9A%84%E5%BD%B1%E5%93%8D%E4%BC%9A%E6%AF%94%E8%BE%83%E6%85%A2%EF%BC%8C%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E4%B8%8A%EF%BC%8C%E8%A7%A3%E5%8E%8B%E5%90%8E%E7%A6%BB%E7%BA%BF%E4%BD%BF%E7%94%A8SMS%E3%80%82">http://www.bioinformatics.org/sms2/index.html)，就可以直接运行这些分析工具。但在线使用可能受电脑网络速度的影响会比较慢，你也可以免费下载到本地电脑上，解压后离线使用SMS。</a></p><blockquote><p>The Sequence Manipulation Suite is a collection of JavaScript programs for generating, formatting, and analyzing short DNA and protein sequences. It is commonly used by molecular biologists, for teaching, and for program and algorithm testing.</p></blockquote><p>SMS提供60多种常用的序列分析功能，主要包括格式转换（Format Conversion）、序列分析（Sequence Analysis）、序列作图（Sequence Figures）、随机序列（Random Sequences）和其他序列分析（Miscellaneous）5个部分。这些分析工具全部列在SMS网站主页的左边栏(见图1左侧)。<br><img src="https://raw.githubusercontent.com/adong77/ligene/master/imageBed/SMS_fig1.jpg" alt="SMS-HomePage"><br>图1. SMS网站主页</p><p>SMS网站提供很多DNA和蛋白质序列分析工具，如DNA&#x2F;蛋白质序列过滤，序列反向互补，蛋白质翻译和PCR引物分析等。下面就给大家简单介绍几个例子。</p><ol><li>GenBank文件特征提取<br>有时候我们得到了一个GenBank文件，想要拿到里面的mRNA，或者CDS序列。我们需要去看GenBank注释信息，然后找到对应mRNA的起始位点和终止位点，然后复制相应的序列，比较麻烦。SMS有一个GenBank Feature Extractor提取工具，可以很容易完成这件事情。<br>首先我们点击网站左边的“GenBank Feature Extractor”，弹出如图2页面，我们只需要将GenBank文件的内容粘贴到文本框里，点击提交按钮（submit）就可以。<br><img src="https://raw.githubusercontent.com/adong77/ligene/master/imageBed/SMS_fig2.jpg" alt="SMS-GenBank"><br>图 2. GenBank Feature Extractor分析页面</li></ol><p>SMS网站提供了一个示例，我们可以直接点击提交按钮，在新跳出的网页查看结果（见图3），拉下网页将看到生成了mRNA，CDS序列等，序列格式都是fasta。<br><img src="https://raw.githubusercontent.com/adong77/ligene/master/imageBed/SMS_fig3.jpg" alt="SMS-GenBank-Feature"><br>图 3. GenBank Feature Extractor结果页面</p><ol start="2"><li><p>反向互补序列<br>很多时候，如设计反向引物序列时，我们需要得到DNA序列的反向互补序列。SMS提供了序列反向互补处理功能。<br>点击网页左侧的“Reverse Complement”，出现如图4的页面，只要把我们的序列粘贴到文本框中，点击提交即可在新的页面看到结果，是不是so easy！该网页分别提供了参数选择框，可选择Reverse(反向)，或Complement（互补）序列分析。<br><img src="https://raw.githubusercontent.com/adong77/ligene/master/imageBed/SMS_fig4.jpg" alt="SMS-RevComp"><br>图 4. Reverse Complement分析页面</p></li><li><p>序列比对的保守序列分析<br>通过多序列比对找出保守序列是常见的生物信息分析之一。SMS网站提供了该项分析，并且可以将保守序列着色，突出显示。<br>点击网页左侧的“Color Align Conservation”，在弹出的页面的输入框中提供已经比对好的序列，还可以设置其他参数，如一致性或者相似性多少（Percentage of sequences that must agree for identity or similarity coloring to be added），着色背景还是文字（Used colored）等。<br>我们提交示例，使用默认参数，将看到下图结果，左边显示序列的名称，右边显示序列的位置。<br><img src="https://raw.githubusercontent.com/adong77/ligene/master/imageBed/SMS_fig5.jpg" alt="SMS-Align-Conservation"><br>图5. Color Align Conservation结果页面</p></li></ol><p>这种图在很多论文中都采用！如果想制作彩色比对，而不是黑白比对，可以试试另一个工具(Coloar Align Properties)，使用方法和Color Align Conservation工具一致。</p>]]></content>
     
@@ -55,8 +55,6 @@
     <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
     
     
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
-    
   </entry>
   
   <entry>
@@ -64,7 +62,7 @@
     <link href="http://blog.ligene.cn/2021/02/25/findNum/"/>
     <id>http://blog.ligene.cn/2021/02/25/findNum/</id>
     <published>2021-02-25T06:46:34.000Z</published>
-    <updated>2022-02-22T12:39:43.756Z</updated>
+    <updated>2022-02-23T13:56:49.489Z</updated>
     
     <content type="html"><![CDATA[<p>为了解决一道小学三年级的数学题，比较笨的我只能写个小程序，还好大学时学生C语言！</p><span id="more"></span><p>题目：在方框（—）里填上1-7（每个数字只用一次），使竖式成立。</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/***每个方框的数字分别用一个字母代替：</span></span><br><span class="line"><span class="comment">    -e- -c- -b-</span></span><br><span class="line"><span class="comment">x           -a-</span></span><br><span class="line"><span class="comment">---------------</span></span><br><span class="line"><span class="comment">-g- -f- -d-  8</span></span><br><span class="line"><span class="comment">**************************/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="type">void</span> <span class="title function_">findNum</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> a=<span class="number">1</span>; a&lt;=<span class="number">7</span>; a++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> b=<span class="number">1</span>; b&lt;=<span class="number">7</span>; b++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(a!=b)</span><br><span class="line">&#123;</span><br><span class="line">                <span class="type">int</span> product1 = a * b;  <span class="comment">//个位数</span></span><br><span class="line">                <span class="type">int</span> remainder1 = product1 % <span class="number">10</span>;</span><br><span class="line">                <span class="type">int</span> division1 = product1 / <span class="number">10</span>;</span><br><span class="line">                <span class="keyword">if</span>(remainder1 == <span class="number">8</span>)&#123;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="type">int</span> c=<span class="number">1</span>;c&lt;=<span class="number">7</span>;c++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">if</span>(c!=a &amp;&amp; c!=b)</span><br><span class="line">                        &#123;</span><br><span class="line">                            <span class="type">int</span> product2= c * a + division1;  <span class="comment">//十位数</span></span><br><span class="line">                            <span class="type">int</span> division2 = product2 / <span class="number">10</span>;</span><br><span class="line">                            <span class="type">int</span> d = product2 % <span class="number">10</span>;</span><br><span class="line">                            <span class="keyword">if</span>(d!=a &amp;&amp; d!=b &amp;&amp; d!=c &amp;&amp; d&gt;<span class="number">0</span> &amp;&amp; d&lt;=<span class="number">7</span>)</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="keyword">for</span> (<span class="type">int</span> e=<span class="number">1</span>;e&lt;=<span class="number">7</span>;e++)</span><br><span class="line">                                &#123;</span><br><span class="line">                                    <span class="keyword">if</span>(e!=a &amp;&amp; e!=b &amp;&amp;e!=c &amp;&amp;e!=d)</span><br><span class="line">                                    &#123;</span><br><span class="line">                                        <span class="type">int</span> product3= e * a + division2;  <span class="comment">//百位数</span></span><br><span class="line">                                        <span class="type">int</span> division3 = product3 / <span class="number">10</span>;</span><br><span class="line">                                        <span class="type">int</span> g = division3;</span><br><span class="line">                                        <span class="type">int</span> f = product3 % <span class="number">10</span>;</span><br><span class="line">                                        <span class="keyword">if</span>((f!=a &amp;&amp;f!=b &amp;&amp;f!=c &amp;&amp;f!=d &amp;&amp;f!=e &amp;&amp;f!=g &amp;&amp; f &lt;= <span class="number">7</span> &amp;&amp; f &gt; <span class="number">0</span>)&amp;&amp;(g!=a &amp;&amp;g!=b &amp;&amp;g!=c &amp;&amp;g!=d &amp;&amp;g!=e &amp;&amp; g &lt;=<span class="number">7</span> &amp;&amp; g &gt; <span class="number">0</span>))</span><br><span class="line">                                        &#123;</span><br><span class="line">                                            <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;e:&quot;</span>&lt;&lt;e&lt;&lt;<span class="string">&quot; c:&quot;</span>&lt;&lt;c&lt;&lt;<span class="string">&quot; b:&quot;</span>&lt;&lt;b&lt;&lt;<span class="built_in">endl</span>&lt;&lt;<span class="string">&quot;x    a:&quot;</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>&lt;&lt;<span class="string">&quot;g:&quot;</span>&lt;&lt;g&lt;&lt;<span class="string">&quot; f:&quot;</span>&lt;&lt;f&lt;&lt;<span class="string">&quot; d:&quot;</span>&lt;&lt;d&lt;&lt;<span class="built_in">endl</span>;   </span><br><span class="line">                                        &#125;</span><br><span class="line">                                    &#125;</span><br><span class="line">                                &#125;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">findNum();</span><br><span class="line">    <span class="keyword">return</span> (<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>正确答案：<br>e:4 c:5 b:3<br>x    a:6<br>g:2 f:7 d:1</p>]]></content>
     
@@ -73,7 +71,7 @@
     
     
     
-    <category term="Computing" scheme="http://blog.ligene.cn/categories/Computing/"/>
+    <category term="Programming" scheme="http://blog.ligene.cn/categories/Programming/"/>
     
     
   </entry>
@@ -209,7 +207,7 @@
     <link href="http://blog.ligene.cn/2018/01/25/Xming-PuTTY/"/>
     <id>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</id>
     <published>2018-01-25T00:45:16.000Z</published>
-    <updated>2022-02-22T12:41:16.111Z</updated>
+    <updated>2022-02-23T13:58:47.888Z</updated>
     
     <content type="html"><![CDATA[<p>一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。</p><span id="more"></span><h2 id="1-Windows安装Xming"><a href="#1-Windows安装Xming" class="headerlink" title="1. Windows安装Xming"></a>1. Windows安装Xming</h2><p>从SourceForge下载Xming-setup.exe（最新的版本是6.9.0.31）。<br>Xming的SourceForge网址： <a href="http://sourceforge.net/projects/xming/">http://sourceforge.net/projects/xming/</a><br>本地安装，安装过程一切按默认选项。<br>第一次运行时，找到开始菜单里面的XLaunch来启动，产生一个初始的配置文件。对于简单的使用来说，不需要任何特殊的配置，使用默认即可。<br>下图中选择“one window”，设置“Display number”中的数字为0。<br><img src="https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/Xming.png" alt="Xming Setup"><br>  启动完成后，在任务栏右边会出现一个“X”形状的图标，这表示Xming已经在运行了，将鼠标悬停上去，能看到当前使用的“Display number”使用默认的0.0。</p><h2 id="2-Linux服务器配置"><a href="#2-Linux服务器配置" class="headerlink" title="2. Linux服务器配置"></a>2. Linux服务器配置</h2><p> 修改ssh服务的配置文件：<br><code>$vi /etc/ssh/sshd_config</code><br>取消下面一行的注释，如果没有这一行则手动添加：<br>X11Forwrding yes<br>这样配置的作用就是允许SSH的X转发。</p><h2 id="3-PuTTY设置"><a href="#3-PuTTY设置" class="headerlink" title="3. PuTTY设置"></a>3. PuTTY设置</h2><p>SSH客户端使用PuTTY，PuTTY是freeware+greenware。<br>PuTTY下载网址：<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a><br>配置 Session：配置linux服务器IP，连接方式为SSH<br>Connection &gt; Data：保存连接使用的用户名<br>Connection &gt; SSH &gt; X11：Enable X11 Forwarding，X display Location 为 “localhost:0”，这里的 0 就是配置 Xming X server 时指定的 Display Number。<br>保存设置：选Session，Saved sessions输入一个名称，并按右边Save按钮。每次更改PuTTY设置都需要这样保存，下次Load这个Session才是同样的设置。<br><img src="https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/putty.png" alt="putty Setup"><br> 至此配置完成。<br>在windows上使用PuTTY连接到Linux服务器，输入xclock &amp;，可以看到X server工作效果了，显示一个时钟图形界面。</p>]]></content>
     
@@ -218,7 +216,7 @@
     
     
     
-    <category term="Computing" scheme="http://blog.ligene.cn/categories/Computing/"/>
+    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
     
     
     <category term="Xming" scheme="http://blog.ligene.cn/tags/Xming/"/>
@@ -232,7 +230,7 @@
     <link href="http://blog.ligene.cn/2018/01/05/clang/"/>
     <id>http://blog.ligene.cn/2018/01/05/clang/</id>
     <published>2018-01-05T00:25:23.000Z</published>
-    <updated>2022-02-22T12:39:35.789Z</updated>
+    <updated>2022-02-23T13:56:39.796Z</updated>
     
     <content type="html"><![CDATA[<p>C语言是一门通用的计算机编程语言，广泛应用于系统与应用软件的开发。它是由Dennis Ritchie与Ken Thompson于1969年至1973年间，为了移植与开发UNIX操作系统，在贝尔实验室设计与开发。C语言具有高效、灵活、功能丰富、表达力强和可移植性好等特点。C语言的设计影响了众多后来的编程语言，例如C++、Objective-C、Java、C#等。</p><span id="more"></span><p>C语言后来发展出多种版本，如Microsoft C、Turbo C等。为了避免各开发商的C语言语法产生差异，美国国家标准研究所(ANSI)为C语言制定了一套国际标准语法，简称为ANSI C。二十世纪八十年代至今的相关程序开发工具，一般都支持匹配ANSI C的语法。目前，C语言编译器普遍存在于各种不同的操作系统中，例如Microsoft Windows, Mac OS X, Linux等。Windows系统下常用的C语言编译器有Microsoft Visual C&#x2F;C++；Linux系统下常用的编译器是GCC(GNU C编译器)等。<br>由于Linux系统也是由C语言开发，其上运行的许多应用软件都由C语言开发，所以我们要对C语言编程有一点了解，才能做好数据分析所需软件的安装工作。<strong>一般Linux开源软件的开发者会提供C语言编写的源代码，如果有些软件安装出问题，可以通过阅读源代码来解决。</strong><br>###C语言程序开发<br>C语言是编译性的高级语言，运行之前需要用编译工具将源代码编译链接成目标文件和可执行文件。C语言编程过程大致可分为四步：编写程序 -&gt; 编译 -&gt; 链接 -&gt; 运行。</p><ul><li><p>(1) 编写源代码<br>一个 C 语言程序源代码，可以是 3 行，也可以是数百万行。它可以写在一个或多个扩展名为 “.c” 的文本文件中，例如hello.c。您可以使用文本编辑器notepad、vim等来编写C语言程序。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;Hello World!&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>(2) 用编译工具编译，并链接生成可执行文件<br><code>$gcc -o helloworld hello.c</code><br> &#x2F;&#x2F;编译并链接生成可执行文件helloworld</p><blockquote><p>如果c程序有多个源代码文件，可能先分别编译成相应的中间目标文件，最后将所有中间文件链接成一个可执行文件。这样其中一个源文件改动后，不用所有文件都要重新编译。Linux提供自动维护工具make，运行make可以从makefile中读取模块之间的关系，自动维护与更新程序的修改。<br><code>$gcc -c hello.c</code><br>&#x2F;&#x2F;只编译生成中间文件hello.o</p></blockquote></li><li><p>(3) 运行helloworld可执行文件<br><code>$./helloworld</code><br>&#x2F;&#x2F;输出”Hello World!”。</p></li></ul><p><img src="https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/cprogramming.png" alt="C programming"></p>]]></content>
     
@@ -241,7 +239,7 @@
     
     
     
-    <category term="Computing" scheme="http://blog.ligene.cn/categories/Computing/"/>
+    <category term="Programming" scheme="http://blog.ligene.cn/categories/Programming/"/>
     
     
     <category term="C" scheme="http://blog.ligene.cn/tags/C/"/>
@@ -295,7 +293,7 @@
     <link href="http://blog.ligene.cn/2017/09/03/qiime-install/"/>
     <id>http://blog.ligene.cn/2017/09/03/qiime-install/</id>
     <published>2017-09-03T06:55:56.000Z</published>
-    <updated>2022-02-22T12:40:56.502Z</updated>
+    <updated>2022-02-23T13:57:56.191Z</updated>
     
     <content type="html"><![CDATA[<p>Ubuntu 16.04LTS安装QIIME</p><ol><li><p>构建Ubuntu环境<br>Linux已内置python且version&gt;2.7，需安装其余必备软件包，版本验证 python –version。<br>$sudo apt-get install build-essential python-dev python-pip</p><span id="more"></span></li><li><p>安装QIIME(base install)<br>使用阿里云镜像安装pip软件包，可大幅提高下载速度，只需在命令后加：</p></li></ol><p>-i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>$sudo pip install numpy&#x3D;&#x3D;1.10.0<br>$sudo pip install ipython&#x3D;&#x3D;5.4.1<br>$sudo pip install qiime  -i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>等待安装完成。<br>安装时，如提示升级pip：<br>$sudo pip install –upgrade pip -i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>3. 检测安装问题<br>安装完成后：<br>$print_qiime_config.py -t<br>有提示错误，按提示再安装：<br>$sudo apt-get install python-tk<br>后显示正常了。<br>4. 安装R<br>$sudo apt-get install r-base r-base-dev<br>$sudo R</p><blockquote><p>install.packages(‘vegan’)<br>install.packages(‘RColorBrewer’)<br>install.packages(‘ape’)<br>source(“<a href="http://bioconductor.org/biocLite.R&quot;">http://bioconductor.org/biocLite.R&quot;</a>)<br>biocLite(“metagenomeSeq”)<br>其它第三方软件还有待安装。。。</p></blockquote>]]></content>
     
@@ -306,7 +304,7 @@
     
     
     
-    <category term="Computing" scheme="http://blog.ligene.cn/categories/Computing/"/>
+    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
     
     
     <category term="qiime" scheme="http://blog.ligene.cn/tags/qiime/"/>
@@ -339,7 +337,7 @@
     <link href="http://blog.ligene.cn/2017/08/26/binfo-JS/"/>
     <id>http://blog.ligene.cn/2017/08/26/binfo-JS/</id>
     <published>2017-08-26T01:17:43.000Z</published>
-    <updated>2022-02-22T12:39:22.299Z</updated>
+    <updated>2022-02-23T13:56:24.260Z</updated>
     
     <content type="html"><![CDATA[<p>A guru of biostar.org predict the future of bioinformatics will need Javascript programming.</p><span id="more"></span><blockquote><p>the move into a “cloud” based environments like amazon EC2&#x2F;app-engine and a more simplified operating systems such as chromeOS and android&#x2F;iOS, will completely change the way people think about programming. So I predict that bioinformatics in the future will be carried out on a cluster of thousands of computers in the cloud, bundled together on the internet. The bioinformatic programming will be based mainly on using web-services and web-applications. These new concept will make a javascript-based bioinformatics very useful.<br>I know that it is sound crazy now, but in 2-3 years I predict that most people will want to perform their bioinfo analysis with their iPhone&#x2F;iPad&#x2F;netbook computers, doing a data-intensive tasks online, without buying expensive hardware.</p></blockquote><p>I am dreaming on developing such an environment, and will work on it soon - an app-engine&#x2F;jquery based bioinformatics platform.</p>]]></content>
     
@@ -348,7 +346,7 @@
     
     
     
-    <category term="Computing" scheme="http://blog.ligene.cn/categories/Computing/"/>
+    <category term="Programming" scheme="http://blog.ligene.cn/categories/Programming/"/>
     
     
     <category term="Javascript" scheme="http://blog.ligene.cn/tags/Javascript/"/>
