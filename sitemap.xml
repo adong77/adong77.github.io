@@ -227,20 +227,6 @@
 
   
   <url>
-    <loc>http://blog.ligene.cn/tags/AI/</loc>
-    <lastmod>2022-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/tags/Tools/</loc>
-    <lastmod>2022-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/tags/BLAST/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,6 +235,20 @@
   
   <url>
     <loc>http://blog.ligene.cn/tags/IGV/</loc>
+    <lastmod>2022-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/tags/AI/</loc>
+    <lastmod>2022-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/tags/Tools/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -311,14 +311,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/qiime/</loc>
+    <loc>http://blog.ligene.cn/tags/PubMed/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/PubMed/</loc>
+    <loc>http://blog.ligene.cn/tags/qiime/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -341,6 +341,13 @@
 
   
   <url>
+    <loc>http://blog.ligene.cn/categories/Bioinformatics/</loc>
+    <lastmod>2022-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/categories/Statistics/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -356,13 +363,6 @@
   
   <url>
     <loc>http://blog.ligene.cn/categories/Tutorials/</loc>
-    <lastmod>2022-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/categories/Bioinformatics/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
