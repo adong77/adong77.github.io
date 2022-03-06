@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2022-02-24T00:14:57.868Z</updated>
+  <updated>2022-03-06T09:34:59.389Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eBook - Genomics and Personalized Medicine</title>
+    <link href="http://blog.ligene.cn/2022/03/06/Precision-Medicine-Book/"/>
+    <id>http://blog.ligene.cn/2022/03/06/Precision-Medicine-Book/</id>
+    <published>2022-03-06T09:22:02.000Z</published>
+    <updated>2022-03-06T09:34:59.389Z</updated>
+    
+    <content type="html"><![CDATA[<p>Genomics and Personalized Medicine: What Everyone needs to Know<br>此书为斯坦福大学Michael Snyder教授写的科普读物。</p><span id="more"></span><p>我一直以此书为《基因组学与精准医疗》课程的推荐教材，但国内没有出版英文书，以前也没有找到电子书。<br>今天用Bing搜索此书，终于在一家伊朗的生物信息学网站找到电子书：<br><a href="https://www.codecool.ir/extra/20203131236253What_Everyone_Needs_to_Know_Michael.pdf">https://www.codecool.ir/extra/20203131236253What_Everyone_Needs_to_Know_Michael.pdf</a></p><p>有需要的同学可以从以上<a href="https://www.codecool.ir/extra/20203131236253What_Everyone_Needs_to_Know_Michael.pdf">链接</a>或此国内<a href="http://www.ligene.cn/images/bigbook/What_Everyone_Needs_to_Know_Michael.pdf">链接</a>下载。</p><p>PS：也是第一次看到伊朗的科研网站<a href="https://www.codecool.ir/">codecool.ir</a>，特意看了一下，站如其名，比较cool👍</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Genomics and Personalized Medicine: What Everyone needs to Know&lt;br&gt;此书为斯坦福大学Michael Snyder教授写的科普读物。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>博客同步到简书</title>
@@ -422,27 +439,6 @@
     <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
     
     <category term="IGV" scheme="http://blog.ligene.cn/tags/IGV/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notepad2代替Windows记事本</title>
-    <link href="http://blog.ligene.cn/2017/07/04/notepad2/"/>
-    <id>http://blog.ligene.cn/2017/07/04/notepad2/</id>
-    <published>2017-07-04T13:31:15.000Z</published>
-    <updated>2020-08-25T04:55:20.069Z</updated>
-    
-    <content type="html"><![CDATA[<p>Windows记事本的功能比较弱，有时不能胜任文本数据处理，如打开大文件会很慢、不能识别Linux系统的换行符等。<br>Notepad2是一款优秀的<strong>轻量级文本编辑器</strong>，而Notepad2-mod又增强了一些功能，如语法高亮、代码折叠、自动代替Windows记事本等。<br>修改版的下载地址：<a href="https://xhmikosr.github.io/notepad2-mod/">https://xhmikosr.github.io/notepad2-mod/</a></p><span id="more"></span><h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h3><p>安装过程中注意选上：“Replace Windows notepad with Notepad2-mod”(下图),将自动代替Windows自带的记事本。<br><img src="https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/notepad2_setup.png" alt="Notepad2 Setup"></p><h3 id="2-添加Notepad2到右键菜单，方便右键直接打开文档"><a href="#2-添加Notepad2到右键菜单，方便右键直接打开文档" class="headerlink" title="2.添加Notepad2到右键菜单，方便右键直接打开文档:"></a>2.添加Notepad2到右键菜单，方便右键直接打开文档:</h3><p>把以下内容拷到任意以.reg为后缀的文件（如notepad2_shortcut.reg），后运行导入系统注册表即可。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"> </span><br><span class="line">[HKEY_CLASSES_ROOT\*\shell\Notepad2]</span><br><span class="line"> </span><br><span class="line">[HKEY_CLASSES_ROOT\*\shell\Notepad2\command]</span><br><span class="line">@=&quot;\&quot;C:\\Program Files\\Notepad2\\Notepad2.exe\&quot; \&quot;%1\&quot;&quot;</span><br></pre></td></tr></table></figure><h3 id="3-简单配置"><a href="#3-简单配置" class="headerlink" title="3.简单配置"></a>3.简单配置</h3><ul><li>View菜单，不要勾选“Long Line Marker”, “Code Folding”。</li><li>Settings菜单，勾选”Remember Recent Files”。</li><li>File菜单的”Line Endings”可以转换为Windows&#x2F;Linux&#x2F;Mac的换行符。</li><li>File菜单的”Encoding”可以设置Default编码为”UTF-8”。</li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Windows记事本的功能比较弱，有时不能胜任文本数据处理，如打开大文件会很慢、不能识别Linux系统的换行符等。&lt;br&gt;Notepad2是一款优秀的&lt;strong&gt;轻量级文本编辑器&lt;/strong&gt;，而Notepad2-mod又增强了一些功能，如语法高亮、代码折叠、自动代替Windows记事本等。&lt;br&gt;修改版的下载地址：&lt;a href=&quot;https://xhmikosr.github.io/notepad2-mod/&quot;&gt;https://xhmikosr.github.io/notepad2-mod/&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
-    
-    
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
     
   </entry>
   
