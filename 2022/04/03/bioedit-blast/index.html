@@ -2,20 +2,18 @@
 <span id="more"></span>
 <p>BLAST是“Basic Local Alignment Search Tool”的简称，顾名思义，它是基于局部比对算法的搜索工具，可将输入的查询序列(核酸或蛋白质)与数据库中的已知序列进行比对，获得与查询序列相似的已知序列，从而判断查询序列的来源或进化关系等。</p>
 <p>一般可通过NCBI网站使用在线BLAST工具，但有时也需要进行本地BLAST，如实验室新测序了一个新细菌的基因组，还没有将此基因组上传的GenBank数据库，将无法通过NCBI在线BLAST搜索此新基因组中的基因。</p>
-<p>本练习使用bioedit软件实现BLAST搜索同源序列，鉴定一个16S测序序列的物种分类。BioEdit使用比较方便，但BioEdit集成的BLAST软件是比较老的版本。NCBI网站提供最新版本的本地BLAST软件(<a target="_blank" rel="noopener" href="https://blast.ncbi.nlm.nih.gov)./">https://blast.ncbi.nlm.nih.gov)。</a></p>
+<p>本练习使用bioedit软件实现BLAST搜索同源序列，鉴定一个16S测序序列的物种分类。BioEdit使用比较方便，整合了构建数据库和各种BLAST算法(如下图)，但BioEdit集成的BLAST软件是比较老的版本。NCBI网站提供最新版本的本地BLAST软件(<a target="_blank" rel="noopener" href="https://blast.ncbi.nlm.nih.gov)./">https://blast.ncbi.nlm.nih.gov)。</a><br><img src="http://www.ligene.cn/images/book/bioedit-1.png" alt="Local BLAST"></p>
+<blockquote>
+<p>注：可从配套百度网盘下载bioedit软件及相关文件:<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA">https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA</a> (提取码: txh5)。</p>
+</blockquote>
 <h3 id="下载并安装BioEdit"><a href="#下载并安装BioEdit" class="headerlink" title="下载并安装BioEdit"></a>下载并安装BioEdit</h3><p>安装BioEdit的默认路径为C:\BioEdit\，如要修改安装路径，软件可能会报错。</p>
 <blockquote>
-<p>可从配套百度网盘文件夹Resource目录下载bioedit软件。</p>
+<p>可从配套百度网盘文件夹Resources目录下载bioedit软件。</p>
 </blockquote>
-<h3 id="准备查询序列与数据库"><a href="#准备查询序列与数据库" class="headerlink" title="准备查询序列与数据库"></a>准备查询序列与数据库</h3><ul>
-<li><ol>
-<li>查询序列文件(16S_rRNA_sequences.txt)，其中有两条测序得到的肠道微生物16S rDNA序列。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>细菌16S序列数据库(16SMicrobial.tar.gz)，此数据库为NCBI网站已经构建好的BLAST数据库，解压后会看到8个文件。</li>
-</ol>
-</li>
+<h3 id="准备查询序列与数据库"><a href="#准备查询序列与数据库" class="headerlink" title="准备查询序列与数据库"></a>准备查询序列与数据库</h3><p>可使用核酸或蛋白质序列，本练习使用：</p>
+<ul>
+<li>1)查询序列文件(16S_rRNA_sequences.txt): 两条测序得到的肠道微生物16S rDNA序列。</li>
+<li>2)细菌16S序列数据库(16SMicrobial.tar.gz): 此数据库为从NCBI网站下载的已经构建好的BLAST数据库，解压后会看到8个文件。</li>
 </ul>
 <blockquote>
 <p>注：两文件可从配套网盘文件夹ch05BLAST下载。数据库文件是压缩文件需要解压使用，可使用解压缩软件，如WINRAR、7-zip等。</p>
@@ -44,9 +42,9 @@
 </li>
 </ul>
 <h3 id="解读BLAST结果"><a href="#解读BLAST结果" class="headerlink" title="解读BLAST结果"></a>解读BLAST结果</h3><p>BLAST结果如下图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-3.png" alt="BLAST结果"></p>
-<p>结果部分前面有参考文献、碱基长度等信息，下面是获得的同源序列根据比对分数(Score)由高到低排列。上图所示的比对匹配分数最高的是艰难梭菌(clostridium difficile)630菌株。</p>
+<p>结果部分前面有参考文献、碱基长度等信息，下面是获得的同源序列，显示数据库对应序列的ID及注释信息，并根据比对分数(Score)由高到低排列。上图所示的比对匹配分数最高的序列是源自艰难梭菌菌株(clostridium difficile)，即此菌可鉴定为艰难梭菌。</p>
 <blockquote>
-<p>注意，16S序列比对可能获得与不同物种的序列具有相同的分数，说明只靠16S序列信息有时是不能注释到种(species)水平。</p>
+<p>注意，16S序列比对可能与不同物种的比对具有相同的分数，因此无法确定哪个菌株最合适，说明只靠16S序列信息有时是不能注释到种(species)水平。</p>
 </blockquote>
 </div><div class="tags"><a href="/tags/BLAST/"><i class="fa fa-tag"></i>BLAST</a><a href="/tags/Tools/"><i class="fa fa-tag"></i>Tools</a></div><div class="post-nav"><a class="next" href="/2022/03/16/win16s-DADA2/">基于DADA2的16S rRNA扩增子测序数据分析流程</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
 var verify = 'false' == 'true' ? true : false;
