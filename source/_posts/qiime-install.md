@@ -2,7 +2,7 @@
 title: Ubuntu 16.04LTS安装QIIME
 date: 2017-09-03 14:55:56
 tags: qiime
-categories: Linux
+categories: Tutorials
 ---
 Ubuntu 16.04LTS安装QIIME
 

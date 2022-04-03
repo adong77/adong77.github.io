@@ -2,7 +2,7 @@
 title: Windows下连接远程Linux桌面
 date: 2018-01-25 08:45:16
 tags: [Xming, PuTTY]
-categories: Linux
+categories: Tutorials
 ---
 一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。
 <!--more-->

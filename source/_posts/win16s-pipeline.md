@@ -65,8 +65,8 @@ $source ~/.bashrc
 ```
 
 ### 2. 流程运行命令
-此流程所有命令都需在WSL-Ubuntu的bash终端下运行（以下命令前面的“$”代表bash提示符，不需要输入）。运行Ubuntu之前，先在电脑D盘创建目录win16s，并将样本测序数据文件(raw_reads.zip)，mapping.txt与qiime_params.txt放在此目录下。
-注意：所有输入文件名，根据自己保存的文件名调整。
+此流程所有命令都需在WSL-Ubuntu的bash终端下运行（以下命令前面的“$”代表bash提示符，不需要输入）。运行Ubuntu之前，先在电脑C盘创建目录win16s，并将样本测序数据文件(raw_reads.zip)，mapping.txt，参考序列文件(rdp_gold.fa)与参数设置文件(qiime_params.txt)复制到此目录下。
+注意：所有输入文件名及目录，根据自己保存的文件进行调整。
 
 #### (1)准备测序数据(raw reads) 
 本实验需要把所有原始数据放在一个文件夹，一个样品的双端测序有两个reads文件，默认以"_R1"与"_R2"分别代表正向与反向测序reads。测序公司提供的数据一般已去除barcode和primer序列。
@@ -80,16 +80,17 @@ $ls raw_reads
 mapping文件必须的列名如下：
 `#sampleID    BarcodeSequence    LinkerPrimerSequence    Description`
 注意：每项之间不能出现空格, 间隔是以TAB键隔开。如果没有BarcodeSequence与LinkerPrimerSequennce信息可以为空。
-用Excel打开mapping.txt，按样本名称修改，再保存为txt格式即可。
-样本mapping file式如下：
+LinkerPrimerSequence与Description之间可以有任意项来说明样本的额外信息。如要修改可用Excel打开mapping.txt，按样本名称修改，再保存为txt格式即可。
+本测序数据样本mapping file式如下：
 ```
-#SampleID	BarcodeSequence	LinkerPrimerSequence	Group	Description
-SAA			diet	SAA
-SAB			fat	SAB
+#SampleID	BarcodeSequence	LinkerPrimerSequence    PRIMER	Group	Description
+SAA	ACGAGTGCGTA	GAGTTTGATCMTGGCTC 8F	diet	SAA
+SAB	AGACGCACTCA	GAGTTTGATCMTGGCTC 8F	fat	SAB
 ```
+这里SampleID项对应于前面测序reads文件名的前三个字母， Group是样本的分组信息, PRIMER是16S引物名称。
 修改mapping.txt后执行以下命令检查是否有问题：
 `$validate_mapping_file.py -m mapping.txt -o validate_map`
-打开输出目录validate_map中的mapping.txt查看检查信息，并根据错误提示修改mapping文件。如果没有BarcodeSequence与LinkerPrimerSequennce信息，可忽略Barcode与Primer序列为空的错误提示。
+在Wiondows资源管理器下打开输出目录validate_map中的mapping.html文件查看检查信息，并根据错误提示修改mapping文件。如果没有BarcodeSequence与LinkerPrimerSequennce信息，可忽略Barcode与Primer序列为空的错误提示。
 
 #### (3)合并双端序列
 如果样品数量较小，可以对每个样品分别进行合并，一次合并一个样品的两端测序数据：
@@ -137,24 +138,31 @@ $multiple_split_libraries_fastq.py -i qual_filter/ -o split_out/ --demultiplexin
 #### (8)OTU聚类(OTU clustering) 
 OTU (operational taxonomic units)是人为给某一个分类单元(科、属、种等)设置的标志。通常按照97%的相似性阈值将序列划分为不同的OTU，每一个OTU通常被认为是一个微生物物种。选取最长的序列作为OTU的代表。
 `$vsearch --cluster_fast seqs_nochimeras.fa --id 0.97 --centroids otus.fa --relabel OTU_`
+以序列最小相似度97%聚类，得到Clusters: 121
 
 #### (9)物种分类注释
 QIIME 采用RDP classifier 将OUT注释为不同物种分类。
 `$assign_taxonomy.py -i otus.fa -m rdp -o taxonomy`
 注意：分类数据库可以采用GreenGenes (http://greengenes.secondgenome.com/)、Silva (https://www.arb-silva.de/)和RDP (http://rdp.cme.msu.edu/)。这里采用Ribosomal Database Project classifier与Greengenes 数据库（13_8版本）。 
 
-#### (10)Map reads back to the OTU data
+#### (10)生成OTU表格
+* 1) Map reads back to the OTU data：
 `$vsearch --usearch_global split_out/seqs.fna --db otus.fa --strand plus --id 0.97 --otutabout otus_table.txt`
 
-#### (11)Convert otu_table.txt to otu-table.biom
+* 2) Convert otu_table.txt to otu-table.biom
 ```
 $biom convert -i otus_table.txt -o otus_table.biom --to-hdf5 --table-type "OTU table"
 $biom add-metadata -i otus_table.biom -o otus_table_tax.biom --observation-metadata-fp taxonomy/otus_tax_assignments.txt --sc-separated taxonomy --observation-header OTUID,taxonomy
 ```
 
-#### (12)检查OTU Table
+* 也可以用QIIME的脚本生成OTU表：
+`make_otu_table.py -i otus_table.txt -t taxonomy/otus_tax_assignments.txt -o otus_table1.biom`
+
+#### (11)检查OTU Table
 `$biom summarize-table -i otus_table_tax.biom -o summary_biom.txt`
-记录样本数据量最少的reads数(Counts)，用于后续的统计抽样（步骤16中的-e参数）。
+记录样本测序数据量最少的read Counts数(此处为Min：11640），用于后续的统计抽样（步骤15中的-e参数）。
+* 关于OTU表的更多检查问题参见后面注释(Notes)部分。
+
 16S数据一般有许多noise，如嵌合体序列，低丰度的OTUs等。
 我们只过滤低频率的OTUs，过滤的标准是OTU总数在每个样品中都低于2(-min_count 2)，而且任何OTU只在少于25%的样品中有(-min_samples 3):
 ```
@@ -170,21 +178,51 @@ $biom convert -i otus_table_tax.biom -o otus_table_tsv.txt --table-type "OTU tab
 $biom convert -i otus_table_tsv.txt  -o otus_table_tsv.biom --table-type "OTU table" --to-hdf5 --table-type="OTU table" --process-obs-metadata taxonomy
 ```
 
-#### (13)可视化 
+#### (12)可视化 
 运行可视化命令前，电脑要先运行Xming软件。
 ```
 #Plot relative abundance for all samples
 $summarize_taxa_through_plots.py -i otus_table_tax.biom -m mapping.txt -o taxa_summary
 ```
-输出文件存放在目录taxa_summary，其中图形信息放在目录taxa_summary_plots，可打开bar_charts.html文件查看各个分类水平的菌株分布信息。
+输出文件存放在目录taxa_summary，其中图形信息放在目录taxa_summary_plots，可用浏览器打开bar_charts.html文件查看各个样本自门水平(L2)到属水平(L6)分类水平的菌株组成分布信息。
+从上到下分别列出5个分类水平门到属的柱状图，每个柱状图下面是对应的数据表，表中分类(Taxonomy)的字母分别代表不同分类水平：k=kingdom, p=phylum, c=class, o=order, f=family, g=genus.
+![taxa_bar_plots.png](https://raw.githubusercontent.com/adong77/ligene/master/Images/book/taxa_plots.png)
+图 1 样品的菌群分类与相对丰度 (A)门水平； (B)属水平
 
-#### (14) Align sequences on QIIME using the ClustalW or muscle method
+#### (13) Align sequences on QIIME using the ClustalW or muscle method
 `$align_seqs.py -i otus.fa -m clustalw -o rep_set_align`
 
-#### (15) Make the reference tree on QIIME
+#### (14) Make the reference tree on QIIME
 `$make_phylogeny.py -i rep_set_align/otus_aligned.fasta -o rep_set.tre`
 
-#### (16)多样性分析(Run diversity analyses on QIIME)
+#### (15)多样性分析(Run diversity analyses on QIIME)
 多样性分析有Alpha diversity与Beta diversity。
 `$core_diversity_analyses.py -i otus_table_tax.biom -m mapping.txt -t rep_set.tre -e 10000 -o core_diversity -p qiime_params.txt`
 参数“-e 10000”是用于均匀抽样和最大稀疏(rarefaction)深度的测序深度。由于测序技术的原因，不同样品的数据量有差异，因此不同的样品数据要先随机从每个样品中选择相同数目的reads (rarefy the data)进行标准化处理后才能进行样品间的比较。
+
+下面列举几个特殊的分析命令：
+* 1) Making PCoA plots:
+`$make_2d_plots.py -i core_diversity/bdiv_even11640/weighted_unifrac_pc.txt -o pcoa_plot -m mapping.txt -b Group`
+注：-i参数后输入文件所在目录的数字（11640）会随前面命令的-e参数变化。
+
+* 2) 统计两组间的菌群差异：
+`$compare_categories.py --method anosim -i core_diversity/bdiv_even11640/weighted_unifrac_dm.txt -m mapping.txt -c Group -o anosim_out -n 99`
+
+--------
+### 3. Notes：
+* 1) 16S数据一般有许多noise，如嵌合体序列，低丰度的OTUs等。
+下面的命令只过滤低频率的OTUs，过滤的标准是OTU总数在每个样品中都低于2(-min_count 2)，而且任何OTU只在少于25%的样品中有(-min_samples 3):
+```
+$filter_otus_from_otu_table.py -i otus_table_tax.biom -o otus_table_tax_filtered.biom  --min_count 2
+#查看还剩下多少OTU？
+$biom summarize-table -i otus_table_tax_filtered.biom
+//Num observations: 199
+```
+
+* 2) 注意：如果发现有什么错误，可以先将biom文件转换成文本文件，再用Excel打开otu_table_tsv.txt修改，然后再转换成biom格式。
+```
+$biom convert -i otus_table_tax.biom -o otus_table_tsv.txt --table-type "OTU table" --to-tsv --header-key taxonomy
+$biom convert -i otus_table_tsv.txt  -o otus_table_tsv.biom --table-type "OTU table" --to-hdf5 --table-type="OTU table" --process-obs-metadata taxonomy
+```
+
+**For more details about 16S rRNA analysis**, recommend following the tutorial: https://rachaellappan.github.io/16S-analysis/index.html 

@@ -3,7 +3,7 @@ title: 新冠病毒的进化树与起源分析
 comments: true
 date: 2020-03-19 07:31:24
 tags:
-categories:
+categories: Bioinformatics
 ---
 根据目前的病毒序列信息，从进化树的几个问题来探讨新冠病毒的起源及其演化关系.
 <!--more-->

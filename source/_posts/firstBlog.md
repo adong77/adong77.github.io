@@ -30,6 +30,7 @@ categories: Tutorials
 **后面安装hexo组件,写博客文章等命令都需要在此目录下进行!**
  
 #Hexo组件：
+ sudo npm install 
  sudo npm install hexo-deployer-git --save
  //可使用命令hexo d 部署到github上
  sudo npm install hexo-server --save
