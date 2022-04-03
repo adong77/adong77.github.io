@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2022-03-15T21:59:43.550Z</updated>
+  <updated>2022-04-03T08:39:08.902Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BioEdit本地BLAST</title>
+    <link href="http://blog.ligene.cn/2022/04/03/bioedit-blast/"/>
+    <id>http://blog.ligene.cn/2022/04/03/bioedit-blast/</id>
+    <published>2022-04-03T08:09:47.000Z</published>
+    <updated>2022-04-03T08:39:08.902Z</updated>
+    
+    <content type="html"><![CDATA[<p>本练习使用BioEdit进行本地BLAST操作，鉴定16S rDNA测序序列的物种分类。</p><span id="more"></span><p>BLAST是“Basic Local Alignment Search Tool”的简称，顾名思义，它是基于局部比对算法的搜索工具，可将输入的查询序列(核酸或蛋白质)与数据库中的已知序列进行比对，获得与查询序列相似的已知序列，从而判断查询序列的来源或进化关系等。</p><p>一般可通过NCBI网站使用在线BLAST工具，但有时也需要进行本地BLAST，如实验室新测序了一个新细菌的基因组，还没有将此基因组上传的GenBank数据库，将无法通过NCBI在线BLAST搜索此新基因组中的基因。</p><p>本练习使用bioedit软件实现BLAST搜索同源序列，鉴定一个16S测序序列的物种分类。BioEdit使用比较方便，但BioEdit集成的BLAST软件是比较老的版本。NCBI网站提供最新版本的本地BLAST软件(<a href="https://blast.ncbi.nlm.nih.gov)./">https://blast.ncbi.nlm.nih.gov)。</a></p><h3 id="下载并安装BioEdit"><a href="#下载并安装BioEdit" class="headerlink" title="下载并安装BioEdit"></a>下载并安装BioEdit</h3><p>安装BioEdit的默认路径为C:\BioEdit\，如要修改安装路径，软件可能会报错。</p><blockquote><p>可从配套百度网盘文件夹Resource目录下载bioedit软件。</p></blockquote><h3 id="准备查询序列与数据库"><a href="#准备查询序列与数据库" class="headerlink" title="准备查询序列与数据库"></a>准备查询序列与数据库</h3><ul><li><ol><li>查询序列文件(16S_rRNA_sequences.txt)，其中有两条测序得到的肠道微生物16S rDNA序列。</li></ol></li><li><ol start="2"><li>细菌16S序列数据库(16SMicrobial.tar.gz)，此数据库为NCBI网站已经构建好的BLAST数据库，解压后会看到8个文件。</li></ol></li></ul><blockquote><p>注：两文件可从配套网盘文件夹ch05BLAST下载。数据库文件是压缩文件需要解压使用，可使用解压缩软件，如WINRAR、7-zip等。</p></blockquote><h3 id="准备本地序列数据库"><a href="#准备本地序列数据库" class="headerlink" title="准备本地序列数据库"></a>准备本地序列数据库</h3><p>如果要把基因组数据做成本地数据库，可通过: </p><ul><li>1)菜单create a local nucleotide database file建立本地DNA数据库</li><li>2)菜单create a local protein database file建立本地蛋白质数据库<br>用于建库的原始数据需要做成fasta格式。</li></ul><p> 本练习直接用NCBI网站提供的已经格式化的16S序列数据库，不需要从头建库：<br>  将前面解压后16SMicrobial目录下的8个文件复制到BioEdit安装目录下的database文件夹(c:\bioedit\database)即可。</p><ol start="4"><li>运行Local BLAST</li></ol><p>Local BLAST窗口的参数设置如图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-2.png" alt="BLAST参数"></p><ul><li><p>由于本练习所用查询序列与数据库序列都是DNA序列，因此Program选blastn，数据库选择Nucleotide Database的16SMicrobial，注意要点击一下16SMicrobial下拉框并选择此数据库。如果为蛋白质序列则要相应选blastp与Protein Database。</p></li><li><p>将16SRNA sequences.txt中的DNA序列复制粘贴到Query输入框中。</p><blockquote><p>注意不要复制fasta格式中的注释行(&gt;开头)。</p></blockquote></li><li><p>另外，将E-value值设置为1e-6或更小的值，默认值1.0将找到许多不相似的序列，e-value值越小，能找到的序列越相似。但e-value设置为一个很小的值可能找不相序的序列(no hits)，可根据需要调整e-value。其它参数可不用设置。</p></li><li><p>最后点击Do Search进行分析。</p></li></ul><h3 id="解读BLAST结果"><a href="#解读BLAST结果" class="headerlink" title="解读BLAST结果"></a>解读BLAST结果</h3><p>BLAST结果如下图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-3.png" alt="BLAST结果"></p><p>结果部分前面有参考文献、碱基长度等信息，下面是获得的同源序列根据比对分数(Score)由高到低排列。上图所示的比对匹配分数最高的是艰难梭菌(clostridium difficile)630菌株。</p><blockquote><p>注意，16S序列比对可能获得与不同物种的序列具有相同的分数，说明只靠16S序列信息有时是不能注释到种(species)水平。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本练习使用BioEdit进行本地BLAST操作，鉴定16S rDNA测序序列的物种分类。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
+    
+    
+    <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
+    
+    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>基于DADA2的16S rRNA扩增子测序数据分析流程</title>
@@ -416,27 +439,6 @@
     
     
     <category term="FDR" scheme="http://blog.ligene.cn/tags/FDR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Javascript-based bioinformatics</title>
-    <link href="http://blog.ligene.cn/2017/08/26/binfo-JS/"/>
-    <id>http://blog.ligene.cn/2017/08/26/binfo-JS/</id>
-    <published>2017-08-26T01:17:43.000Z</published>
-    <updated>2022-02-23T13:56:24.260Z</updated>
-    
-    <content type="html"><![CDATA[<p>A guru of biostar.org predict the future of bioinformatics will need Javascript programming.</p><span id="more"></span><blockquote><p>the move into a “cloud” based environments like amazon EC2&#x2F;app-engine and a more simplified operating systems such as chromeOS and android&#x2F;iOS, will completely change the way people think about programming. So I predict that bioinformatics in the future will be carried out on a cluster of thousands of computers in the cloud, bundled together on the internet. The bioinformatic programming will be based mainly on using web-services and web-applications. These new concept will make a javascript-based bioinformatics very useful.<br>I know that it is sound crazy now, but in 2-3 years I predict that most people will want to perform their bioinfo analysis with their iPhone&#x2F;iPad&#x2F;netbook computers, doing a data-intensive tasks online, without buying expensive hardware.</p></blockquote><p>I am dreaming on developing such an environment, and will work on it soon - an app-engine&#x2F;jquery based bioinformatics platform.</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;A guru of biostar.org predict the future of bioinformatics will need Javascript programming.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Programming" scheme="http://blog.ligene.cn/categories/Programming/"/>
-    
-    
-    <category term="Javascript" scheme="http://blog.ligene.cn/tags/Javascript/"/>
     
   </entry>
   

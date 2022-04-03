@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Some resources for learning Bioinformatics and Genome analysis"><title>BioEdit本地BLAST | LIGENE</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">BioEdit本地BLAST</h1><a id="logo" href="/.">LIGENE</a><p class="description">Notes of Bioinformatics and Genomics</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/bigbook/"><i class="fa fa-book"> 教程</i></a><a href="/downloads/"><i class="fa fa-download"> 下载</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">BioEdit本地BLAST</h1><div class="post-meta">2022-04-03<span> | </span><span class="category"><a href="/categories/Bioinformatics/">Bioinformatics</a></span></div><a class="disqus-comment-count" href="/2022/04/03/bioedit-blast/#vcomment"><span class="valine-comment-count" data-xid="/2022/04/03/bioedit-blast/"></span><span> 条评论</span></a><div class="post-content"><p>本练习使用BioEdit进行本地BLAST操作，鉴定16S rDNA测序序列的物种分类。</p>
+<span id="more"></span>
+<p>BLAST是“Basic Local Alignment Search Tool”的简称，顾名思义，它是基于局部比对算法的搜索工具，可将输入的查询序列(核酸或蛋白质)与数据库中的已知序列进行比对，获得与查询序列相似的已知序列，从而判断查询序列的来源或进化关系等。</p>
+<p>一般可通过NCBI网站使用在线BLAST工具，但有时也需要进行本地BLAST，如实验室新测序了一个新细菌的基因组，还没有将此基因组上传的GenBank数据库，将无法通过NCBI在线BLAST搜索此新基因组中的基因。</p>
+<p>本练习使用bioedit软件实现BLAST搜索同源序列，鉴定一个16S测序序列的物种分类。BioEdit使用比较方便，但BioEdit集成的BLAST软件是比较老的版本。NCBI网站提供最新版本的本地BLAST软件(<a target="_blank" rel="noopener" href="https://blast.ncbi.nlm.nih.gov)./">https://blast.ncbi.nlm.nih.gov)。</a></p>
+<h3 id="下载并安装BioEdit"><a href="#下载并安装BioEdit" class="headerlink" title="下载并安装BioEdit"></a>下载并安装BioEdit</h3><p>安装BioEdit的默认路径为C:\BioEdit\，如要修改安装路径，软件可能会报错。</p>
+<blockquote>
+<p>可从配套百度网盘文件夹Resource目录下载bioedit软件。</p>
+</blockquote>
+<h3 id="准备查询序列与数据库"><a href="#准备查询序列与数据库" class="headerlink" title="准备查询序列与数据库"></a>准备查询序列与数据库</h3><ul>
+<li><ol>
+<li>查询序列文件(16S_rRNA_sequences.txt)，其中有两条测序得到的肠道微生物16S rDNA序列。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>细菌16S序列数据库(16SMicrobial.tar.gz)，此数据库为NCBI网站已经构建好的BLAST数据库，解压后会看到8个文件。</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>注：两文件可从配套网盘文件夹ch05BLAST下载。数据库文件是压缩文件需要解压使用，可使用解压缩软件，如WINRAR、7-zip等。</p>
+</blockquote>
+<h3 id="准备本地序列数据库"><a href="#准备本地序列数据库" class="headerlink" title="准备本地序列数据库"></a>准备本地序列数据库</h3><p>如果要把基因组数据做成本地数据库，可通过: </p>
+<ul>
+<li>1)菜单create a local nucleotide database file建立本地DNA数据库</li>
+<li>2)菜单create a local protein database file建立本地蛋白质数据库<br>用于建库的原始数据需要做成fasta格式。</li>
+</ul>
+<p> 本练习直接用NCBI网站提供的已经格式化的16S序列数据库，不需要从头建库：<br>  将前面解压后16SMicrobial目录下的8个文件复制到BioEdit安装目录下的database文件夹(c:\bioedit\database)即可。</p>
+<ol start="4">
+<li>运行Local BLAST</li>
+</ol>
+<p>Local BLAST窗口的参数设置如图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-2.png" alt="BLAST参数"></p>
+<ul>
+<li><p>由于本练习所用查询序列与数据库序列都是DNA序列，因此Program选blastn，数据库选择Nucleotide Database的16SMicrobial，注意要点击一下16SMicrobial下拉框并选择此数据库。如果为蛋白质序列则要相应选blastp与Protein Database。</p>
+</li>
+<li><p>将16SRNA sequences.txt中的DNA序列复制粘贴到Query输入框中。</p>
+<blockquote>
+<p>注意不要复制fasta格式中的注释行(&gt;开头)。</p>
+</blockquote>
+</li>
+<li><p>另外，将E-value值设置为1e-6或更小的值，默认值1.0将找到许多不相似的序列，e-value值越小，能找到的序列越相似。但e-value设置为一个很小的值可能找不相序的序列(no hits)，可根据需要调整e-value。其它参数可不用设置。</p>
+</li>
+<li><p>最后点击Do Search进行分析。</p>
+</li>
+</ul>
+<h3 id="解读BLAST结果"><a href="#解读BLAST结果" class="headerlink" title="解读BLAST结果"></a>解读BLAST结果</h3><p>BLAST结果如下图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-3.png" alt="BLAST结果"></p>
+<p>结果部分前面有参考文献、碱基长度等信息，下面是获得的同源序列根据比对分数(Score)由高到低排列。上图所示的比对匹配分数最高的是艰难梭菌(clostridium difficile)630菌株。</p>
+<blockquote>
+<p>注意，16S序列比对可能获得与不同物种的序列具有相同的分数，说明只靠16S序列信息有时是不能注释到种(species)水平。</p>
+</blockquote>
+</div><div class="tags"><a href="/tags/BLAST/"><i class="fa fa-tag"></i>BLAST</a><a href="/tags/Tools/"><i class="fa fa-tag"></i>Tools</a></div><div class="post-nav"><a class="next" href="/2022/03/16/win16s-DADA2/">基于DADA2的16S rRNA扩增子测序数据分析流程</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'MNJKe5WJm5b2Ef1eGugrbjeW-9Nh9j0Va',
+  appKey:'JidWqAC9XmARrOScdPmYsjOc',
+  placeholder:'Writing comments here',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Bioinformatics/">Bioinformatics</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Genomics/">Genomics</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Statistics/">Statistics</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tutorials/">Tutorials</a><span class="category-list-count">10</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/BLAST/" style="font-size: 15px;">BLAST</a> <a href="/tags/IGV/" style="font-size: 15px;">IGV</a> <a href="/tags/AI/" style="font-size: 15px;">AI</a> <a href="/tags/Tools/" style="font-size: 15px;">Tools</a> <a href="/tags/Microbiome/" style="font-size: 15px;">Microbiome</a> <a href="/tags/Xming/" style="font-size: 15px;">Xming</a> <a href="/tags/PuTTY/" style="font-size: 15px;">PuTTY</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/C/" style="font-size: 15px;">C</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/FDR/" style="font-size: 15px;">FDR</a> <a href="/tags/PubMed/" style="font-size: 15px;">PubMed</a> <a href="/tags/qiime/" style="font-size: 15px;">qiime</a> <a href="/tags/QIIME/" style="font-size: 15px;">QIIME</a> <a href="/tags/WSL/" style="font-size: 15px;">WSL</a> <a href="/tags/16S/" style="font-size: 15px;">16S</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/04/03/bioedit-blast/">BioEdit本地BLAST</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/win16s-DADA2/">基于DADA2的16S rRNA扩增子测序数据分析流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/scikit-learn/">scikit learn</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/WSL-install/">Ubuntu 20.04 LTS 更换阿里云源</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/06/Precision-Medicine-Book/">eBook - Genomics and Personalized Medicine</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/02/21/JianShu/">博客同步到简书</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/05/SMS/">SMS-生物序列分析的在线工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/02/25/findNum/">findNum</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/24/GenomeBrowser/">UCSC基因组浏览器的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/08/ghelper/">谷歌助手使用谷歌学术</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.haomwei.com/" title="大道至简" target="_blank">大道至简</a><ul></ul><a href="http://www.ligene.cn/lilab" title="LiLab" target="_blank">LiLab</a><ul></ul><a href="http://readiab.org/" title="An Introduction to Applied Bioinformatics" target="_blank">An Introduction to Applied Bioinformatics</a><ul></ul><a href="https://lulab.gitbook.io/" title="Bioinformatics Tutorials" target="_blank">Bioinformatics Tutorials</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a target="_blank" href="http://www.ligene.cn" rel="nofollow noopener">LIGENE.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo</a> & GitHub Pages.</div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
