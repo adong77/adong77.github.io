@@ -33,9 +33,9 @@
     <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
     
     
-    <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
-    
     <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
+    
+    <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
     
   </entry>
   
@@ -306,9 +306,9 @@
     <category term="Genomics" scheme="http://blog.ligene.cn/categories/Genomics/"/>
     
     
-    <category term="QIIME" scheme="http://blog.ligene.cn/tags/QIIME/"/>
-    
     <category term="WSL" scheme="http://blog.ligene.cn/tags/WSL/"/>
+    
+    <category term="QIIME" scheme="http://blog.ligene.cn/tags/QIIME/"/>
     
   </entry>
   
