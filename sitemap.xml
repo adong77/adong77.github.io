@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/about/index.html</loc>
+    
+    <lastmod>2022-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/2020/09/24/GenomeBrowser/</loc>
     
     <lastmod>2022-05-12</lastmod>
@@ -146,15 +155,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/about/index.html</loc>
-    
-    <lastmod>2022-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/2017/06/25/firstBlog/</loc>
     
     <lastmod>2020-08-25</lastmod>
@@ -265,7 +265,7 @@
 
   <url>
     <loc>http://blog.ligene.cn/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -273,119 +273,119 @@
   
   <url>
     <loc>http://blog.ligene.cn/tags/Tools/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/AI/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/BLAST/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/IGV/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/Microbiome/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/Xming/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/PuTTY/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/Javascript/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/WSL/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/GitHub/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/Hexo/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/C/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/FDR/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/qiime/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/PubMed/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/QIIME/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/tags/16S/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -394,35 +394,35 @@
   
   <url>
     <loc>http://blog.ligene.cn/categories/Genomics/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/categories/Tutorials/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/categories/Statistics/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/categories/Bioinformatics/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.ligene.cn/categories/Programming/</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
