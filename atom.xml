@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2022-04-03T09:37:37.538Z</updated>
+  <updated>2022-06-04T12:35:34.611Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>贝叶斯定理与HIV检测</title>
+    <link href="http://blog.ligene.cn/2022/06/04/bayes-hiv/"/>
+    <id>http://blog.ligene.cn/2022/06/04/bayes-hiv/</id>
+    <published>2022-06-04T12:33:26.000Z</published>
+    <updated>2022-06-04T12:35:34.611Z</updated>
+    
+    <content type="html"><![CDATA[<p>很多疾病的检测结果通常是阴性(-)和阳性(+)两种情况，艾滋病(AIDS)也不例外。目前，HIV(艾滋病病毒)检测方式是做血清抗体检测。任何医学检测都不会100%准确，数据的统计结果显示，真正得了艾滋病的患者在接受HIV检测后,结果呈现阳性的概率为99.8%，而健康人群检测结果为阴性的概率为99%。总体来说，检测结果还是很可靠的，得病的人基本会被检测出来，没有得病的人也能被准确甄选出来。</p><span id="more"></span>  <p>老王是A国居民，A国人口总共有100万，A国的艾滋病感染率为0.0666%，这个概率属于艾滋病高发区。某天老王参加完聚会后感觉身体不舒服，于是去医院检查，检测结果是HIV阳性，老王非常害怕。那么老王实际得艾滋病的概率是多大呢？<br>我们将使用贝叶斯定理[1]的方法计算老王的得病概率。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">P(A|B) = P(B|A)P(A)/P(B)            [1]</span><br></pre></td></tr></table></figure><p>根据故事背景，要求的是老王在检测为阳性的情况下患病的概率，即P(患病|阳性)，<br>我们假设：</p><ul><li>A: 患者得这种病</li><li>B: 检验结果呈阳性</li></ul><p>已知条件如下：</p><ol><li>P(A)&#x3D;0.0666% – A国的艾滋病感染率为0.0666%。</li><li>P(B|A)&#x3D;0.998 –艾滋病患者在接受检测后的结果呈阳性的概率为99.8%。</li><li>P(B|A拔)&#x3D;0.01 –健康人群检测结果为阴性的概率为99%，则为阳性的概率为1%。</li><li>A国总人口为100万。<br>则P(A|B)是多少? 即检验结果呈阳性并传染上该病的概率是多少?</li></ol><p>根据贝叶斯定理，在血液检测阳性的的人群中，确定感染HIV的概率：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">P(患病|阳性) = P(阳性|患病) X P(患病) / ( P(阳性|患病) X P(患病) + P(阳性|未患病) X P(未患病) )</span><br><span class="line">            = 0.998 * 0.000666 / 0.998 * 0.000666 + 0.01 * (1-0.000666) = 0.062363</span><br></pre></td></tr></table></figure><p>在老王检测结果呈阳性的情况下，老王得艾滋病的概率仅为6.24%。</p><p>各类人群的人数总结如下表所示：</p><table><thead><tr><th>结果</th><th>患者</th><th>健康者</th><th>总计</th></tr></thead><tbody><tr><td>阳性</td><td>655</td><td>9993</td><td>10658</td></tr><tr><td>阴性</td><td>1</td><td>989341</td><td>989342</td></tr></tbody></table><p>即P(患病|阳性) &#x3D; 665&#x2F;10658 &#x3D; 6.24% 。</p><h3 id="为什么检测阳性而患病概率这么低？"><a href="#为什么检测阳性而患病概率这么低？" class="headerlink" title="为什么检测阳性而患病概率这么低？"></a>为什么检测阳性而患病概率这么低？</h3><p>这是因为虽然老王的检测结果呈阳性，但是假阳性的人数很多，因此即使老王的检测结果为阳性，也存在很大的概率并未得病。这也是艾滋病筛查需要检测多次的原因，通过多轮检测，层层筛选后，概率自然就会提高。</p><hr><p><img src="http://www.ligene.cn/images/bayes.jpg" alt="Bayes"><br>Thomas Bayes (1701-1761)，英国牧师、业余数学家、统计师。贝叶斯出身于牧师之家，其父Joshua Bayes是伦敦长老会牧师。1719年，18岁的贝叶斯继承家族传统，进入爱丁堡大学修读逻辑学和神学，毕业后顺理成章成为一位牧师。在牧师的工作之余，贝叶斯对数学和逻辑推断抱有强烈的兴趣，有传言说，贝叶斯希望通过统计概率，证明上帝的存在。然而，终其一生，他没有实现这个愿望。被冠以“Bayes”之名的贝叶斯定理，则是在贝叶斯过世之后，由另一位牧师Richard Price从他的笔记中整理发表的。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;很多疾病的检测结果通常是阴性(-)和阳性(+)两种情况，艾滋病(AIDS)也不例外。目前，HIV(艾滋病病毒)检测方式是做血清抗体检测。任何医学检测都不会100%准确，数据的统计结果显示，真正得了艾滋病的患者在接受HIV检测后,结果呈现阳性的概率为99.8%，而健康人群检测结果为阴性的概率为99%。总体来说，检测结果还是很可靠的，得病的人基本会被检测出来，没有得病的人也能被准确甄选出来。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Statistics" scheme="http://blog.ligene.cn/categories/Statistics/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>BioEdit本地BLAST</title>
@@ -418,27 +437,6 @@
     
     
     <category term="qiime" scheme="http://blog.ligene.cn/tags/qiime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据分析的多重检验问题(multiple testing)</title>
-    <link href="http://blog.ligene.cn/2017/08/26/multiple-testing/"/>
-    <id>http://blog.ligene.cn/2017/08/26/multiple-testing/</id>
-    <published>2017-08-26T01:31:37.000Z</published>
-    <updated>2020-08-25T04:55:20.059Z</updated>
-    
-    <content type="html"><![CDATA[<p>数据分析中常碰见多重检验(multiple testing)问题，如利用基因芯片数据比较分析两个样品间是否有差异表达基因，或利用质谱定量数据鉴定某一个蛋白在两个样品中是否存在差异表达等。<br>一般选取差异表达基因有两标准：<br>(1) Fold Change，即两个样品中同一个基因的表达水平变化倍数;<br>(2) p-value，即通过T检验等统计学方法计算每个基因的P值。</p><span id="more"></span><p>但是由于通常样本量较少，从而对总体方差的估计不很准确，所以T检验的检验效能会降低，并且如果多次使用T检验会显著增加假阳性的次数。例如，当某个基因的p值小于0.05（5%）时，我们通常认为这个基因在两个样本中的表达是有差异的。但是仍旧有5%的概率，这个基因并不是差异表达基因，我们错误地否认了原假设（在两个样本中没有差异表达），导致了假阳性的产生（犯错的概率为5%）。<br>如果检验一次，犯错的概率是5%；检测10000次，犯错的次数就是500次，即额外多出了500个差异基因的结论（即使实际没有差异）。为了控制假阳性的次数，于是我们需要对p值进行多重检验校正，提高阈值。</p><h3 id="FDR方法"><a href="#FDR方法" class="headerlink" title="FDR方法"></a>FDR方法</h3><p>Benjamini于1995年提出一种方法，通过控制FDR(False Discovery Rate)来决定P值的域值。假设你挑选了R个差异表达的基因，其中有S个是真正有差异表达的，另外有V个其实是没有差异表达的，是假阳性的。实践中希望错误比例Q＝V&#x2F;R平均而言不能超过某个预先设定的值（比如0.05），在统计学上，这也就等价于控制FDR不能超过5％.<br>根据Benjamini在他的文章中所证明的定理，控制FDR的步骤实际上非常简单。<br>设总共有m个候选基因，每个基因对应的p值从小到大排列分别是p(1),p(2),…,p(m),则若想控制FDR不能超过q，则只需找到最大的正整数i，使得 p(i)&lt;&#x3D; (i*q)&#x2F;m。然后，挑选对应p(1),p(2),…,p(i)的基因做为差异表达基因，这样就能从统计学上保证FDR不超过q。这是Benjamini and Hochber法(BH法)从P值估计FDR的基本原理。</p><h3 id="FDR计算"><a href="#FDR计算" class="headerlink" title="FDR计算"></a>FDR计算</h3><p>FDR的计算方法除了可以使用excel的BH计算方法外，对于较大的数据，我们推荐使用R命令p.adjust。<br><img src="https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/fdr_padjust.png" alt="p.adjust"><br>该函数的运算需要先将一系列p值、设定一个校正方法（p.adjust.methods）及所有p值的个数（length(p)）输入到p.adjust函数中。返回结果为校正后的P值，可以用于后续分析了。</p><h3 id="FDR与p-value区别"><a href="#FDR与p-value区别" class="headerlink" title="FDR与p-value区别"></a>FDR与p-value区别</h3><p>The False Discovery Rate (FDR) of a set of predictions is the expected percent of false predictions in the set of predictions . For example if the algorithm returns 100 genes with a false discovery rate of .3 then we should expect 70 of them to be correct. FDR的意义为错误拒绝（即拒绝真的原假设）的个数占所有被拒绝的原假设个数的比例的期望值！<br>The FDR is very different from a p-value, and as such a much higher FDR can be tolerated than with a p-value. In the example above a set of 100 predictions of which 70 are correct might be very useful, especially if there are thousands of genes on the array most of which are not differentially expressed. In contrast p-value of .3 is generally unacceptabe in any circumstance. Meanwhile an FDR of as high as .5 or even higher might be quite meaningful.</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;数据分析中常碰见多重检验(multiple testing)问题，如利用基因芯片数据比较分析两个样品间是否有差异表达基因，或利用质谱定量数据鉴定某一个蛋白在两个样品中是否存在差异表达等。&lt;br&gt;一般选取差异表达基因有两标准：&lt;br&gt;(1) Fold Change，即两个样品中同一个基因的表达水平变化倍数;&lt;br&gt;(2) p-value，即通过T检验等统计学方法计算每个基因的P值。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Statistics" scheme="http://blog.ligene.cn/categories/Statistics/"/>
-    
-    
-    <category term="FDR" scheme="http://blog.ligene.cn/tags/FDR/"/>
     
   </entry>
   
