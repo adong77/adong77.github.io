@@ -2,6 +2,7 @@
 <span id="more"></span>  
 <p>老王是A国居民，A国人口总共有100万，A国的艾滋病感染率为0.0666%，这个概率属于艾滋病高发区。某天老王参加完聚会后感觉身体不舒服，于是去医院检查，检测结果是HIV阳性，老王非常害怕。那么老王实际得艾滋病的概率是多大呢？<br>我们将使用贝叶斯定理[1]的方法计算老王的得病概率。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">P(A|B) = P(B|A)P(A)/P(B)            [1]</span><br></pre></td></tr></table></figure>
+<p>贝叶斯公式具体解释就是：在B出现的前提下A出现的概率，等于以A为前提B出现的概率与A出现概率的乘积，再除以B出现的概率。换句话说，就是后验概率和先验概率的关系。</p>
 <p>根据故事背景，要求的是老王在检测为阳性的情况下患病的概率，即P(患病|阳性)，<br>我们假设：</p>
 <ul>
 <li>A: 患者得这种病</li>
