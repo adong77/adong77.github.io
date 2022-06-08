@@ -5,11 +5,11 @@ date: 2020-09-24 12:57:05
 tags: [Tools]
 categories: [Genomics]
 ---
-UCSC基因组浏览器为用户提供方便查询各个物种基因组序列的途径，并支持对基因组信息进行可视化显示的在线工具。
+UCSC基因组浏览器为用户提供方便查询各个物种的基因组序列，并支持对基因组信息进行可视化显示的在线工具。UCSC基因组浏览器使用注释轨道从基因组查找序列的特征，每个轨道列出基于生物学实验的特定注释，并分门别类。对于特定序列可能有数以百计的注释轨道，因此它是交互的，允许用户选择显示各种不同的注释轨道。
 <!--more-->
 ### UCSC基因组浏览器界面简介
-在网页浏览器打开UCSC主页(http://genome.ucsc.edu/)，并点击菜单栏的Genome Brower就可以看到下面界面（图1）：
-![UCSC Genome Browser](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/UCSC-1.png)
+在浏览器中打开UCSC基因组主页(http://genome.ucsc.edu/)，并点击菜单栏的Genome Brower就可以看到下面界面（图1）：
+![UCSC Genome Browser](http://www.ligene.cn/images/UCSC-1.png)
 图1. UCSC基因组浏览器界面
 
  UCSC基因组浏览器页面各部分的功能介绍如上图所示: 
@@ -19,7 +19,7 @@ UCSC基因组浏览器为用户提供方便查询各个物种基因组序列的�
 
 ### 查看ALDH基因信息
 USCC基因组浏览器检索可以用基因名，也可以根据染色体位置检索, 如在检索框直接输入位置：chr12:111,766,922-111,817,529。这里我们以ALDH2为例，在检索框中输入ALDH2，点按钮go，在出现的页面中选择第一个条目，可以显示界面(图2):
-![UCSC基因组浏览器检索结果](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/UCSC-2.png)
+![UCSC基因组浏览器检索结果](http://www.ligene.cn/images/UCSC-2.png)
 图2. UCSC基因组浏览器检索结果
 
 ALDH2基因约有50,608个碱基组成，位于12号染色体q臂(染色体p臂为短臂，petite，长臂为q)，从左到右分别是5'端到3'端, 箭头代表基因转录方向。基因的exon是以box显示，而intron以线表示。末尾的UTRs是以比exon低一点的box表示。

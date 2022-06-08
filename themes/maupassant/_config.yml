@@ -32,7 +32,7 @@ minivaline: ## See: https://github.com/MiniValine/MiniValine
   appKey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
   placeholder: Write a Comment ## Comment box placeholder.
   adminEmailMd5: ## The MD5 of Admin Email to show Admin Flag.
-  math: true ## Support MathJax.
+  mathjax: true ## Support MathJax.
   md: true ## Support Markdown.
   # MiniValine's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
