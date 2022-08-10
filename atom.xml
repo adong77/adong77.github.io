@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2022-06-08T11:53:04.924Z</updated>
+  <updated>2022-06-26T22:45:48.013Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>An overview of TruSeq Stranded mRNA sequencing</title>
+    <link href="http://blog.ligene.cn/2022/06/27/TruSeq-Stranded-mRNA-sequencing/"/>
+    <id>http://blog.ligene.cn/2022/06/27/TruSeq-Stranded-mRNA-sequencing/</id>
+    <published>2022-06-26T22:11:53.000Z</published>
+    <updated>2022-06-26T22:45:48.013Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要:</p><span id="more"></span><h1 id="链特异性测序"><a href="#链特异性测序" class="headerlink" title="链特异性测序"></a>链特异性测序</h1><h2 id="链特异性测序文库构建流程"><a href="#链特异性测序文库构建流程" class="headerlink" title="链特异性测序文库构建流程"></a>链特异性测序文库构建流程</h2><p>这里以TruSeq Stranded mRNA sequencing为例，介绍链特异性测序文库的构建流程，如图所示，红色始终代表sense strand的信息，天蓝色代表antisense strand的信息。<br><img src="http://www.ligene.cn/images/Tru-Seq-library.png" alt="TruSeq Stranded mRNA sequencing libarry"></p><ul><li>首先，利用成熟mRNA带polyA尾的特点，通过oligo dT来富集mRNA；</li><li>接下来，使用超声波对mRNA进行片段化，然后再使用随机引物进行反转录，这个过程就是第一条链（天蓝色）的合成；</li><li>接下来，再使用RNaseH酶消化降解掉杂合链中的RNA，然后再进行第二链（红色）的合成，注意这里不使用dTTP，而是使用dUTP。</li><li>然后，先使用Klenow酶来给3’末端添加一个突出的A；再连接adapter，注意这里的adapter结构；</li><li>然后再进行PCR反应，由于DNA聚合酶不能以dUTP为模板，所以以sense strand为模板的链没有办法参与到PCR中，因此最终的双链DNA都是右下角那样的。<br>（需要先降解dUTP链？）<br>我们最终可以看到，Read1测到的是antisense strand的信息，Read2测到的是sense strand的信息，这和我们之前的理解是一样的哈。</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要:&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>贝叶斯定理与HIV检测</title>
@@ -414,29 +431,6 @@
     
     
     <category term="PubMed" scheme="http://blog.ligene.cn/tags/PubMed/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 16.04LTS安装QIIME</title>
-    <link href="http://blog.ligene.cn/2017/09/03/qiime-install/"/>
-    <id>http://blog.ligene.cn/2017/09/03/qiime-install/</id>
-    <published>2017-09-03T06:55:56.000Z</published>
-    <updated>2022-02-23T13:57:56.191Z</updated>
-    
-    <content type="html"><![CDATA[<p>Ubuntu 16.04LTS安装QIIME</p><ol><li><p>构建Ubuntu环境<br>Linux已内置python且version&gt;2.7，需安装其余必备软件包，版本验证 python –version。<br>$sudo apt-get install build-essential python-dev python-pip</p><span id="more"></span></li><li><p>安装QIIME(base install)<br>使用阿里云镜像安装pip软件包，可大幅提高下载速度，只需在命令后加：</p></li></ol><p>-i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>$sudo pip install numpy&#x3D;&#x3D;1.10.0<br>$sudo pip install ipython&#x3D;&#x3D;5.4.1<br>$sudo pip install qiime  -i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>等待安装完成。<br>安装时，如提示升级pip：<br>$sudo pip install –upgrade pip -i <a href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host mirrors.aliyun.com<br>3. 检测安装问题<br>安装完成后：<br>$print_qiime_config.py -t<br>有提示错误，按提示再安装：<br>$sudo apt-get install python-tk<br>后显示正常了。<br>4. 安装R<br>$sudo apt-get install r-base r-base-dev<br>$sudo R</p><blockquote><p>install.packages(‘vegan’)<br>install.packages(‘RColorBrewer’)<br>install.packages(‘ape’)<br>source(“<a href="http://bioconductor.org/biocLite.R&quot;">http://bioconductor.org/biocLite.R&quot;</a>)<br>biocLite(“metagenomeSeq”)<br>其它第三方软件还有待安装。。。</p></blockquote>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Ubuntu 16.04LTS安装QIIME&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;构建Ubuntu环境&lt;br&gt;Linux已内置python且version&amp;gt;2.7，需安装其余必备软件包，版本验证 python –version。&lt;br&gt;$sudo apt-get install build-essential python-dev python-pip&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
-    
-    
-    <category term="qiime" scheme="http://blog.ligene.cn/tags/qiime/"/>
     
   </entry>
   
