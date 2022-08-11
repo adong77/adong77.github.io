@@ -58,6 +58,12 @@ menu:
   - page: BiG教程
     directory: bigbook/
     icon: fa-book
+  - page: guestbook
+    directory: guestbook/
+    icon: fa-comments
+  - page: history
+    directory: history/
+    icon: fa-tag  
   - page: about
     directory: about/
     icon: fa-user
@@ -82,13 +88,13 @@ links:
 
 timeline:
   - num: 1
-    word: 2014/06/12-Start
+    word: 2017/06/12-初试个人博客，落脚于Git Pages，并定向于域名blog.ligene.cn。
   - num: 2
-    word: 2014/11/29-XXX
+    word: 2021/11/29-购买腾讯云并备案域名ligene.cn，完成个人网站首页。
   - num: 3
-    word: 2015/02/18-DDD
+    word: 2022/08/11-将个人首页尽量简化，完全用HTML、CSS与JavaScript编写。
   - num: 4
-    word: More
+    word: More待续
 
 # Static files
 js: js
