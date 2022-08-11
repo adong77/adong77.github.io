@@ -71,9 +71,9 @@
     <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
     
     
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
-    
     <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
+    
+    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
     
   </entry>
   
