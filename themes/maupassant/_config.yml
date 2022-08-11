@@ -107,6 +107,9 @@ menu:
   - page: 下载
     directory: downloads/
     icon: fa-download
+  - page: history
+    directory: history/
+    icon: fa-tag  
   - page: about
     directory: about/
     icon: fa-user

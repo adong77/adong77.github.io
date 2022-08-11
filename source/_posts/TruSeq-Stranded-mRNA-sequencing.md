@@ -3,7 +3,7 @@ title: An overview of TruSeq Stranded mRNA sequencing
 comments: true
 date: 2022-06-27 06:11:53
 tags:
-categories:
+categories: Genomics
 ---
 链特异性测序
 <!--more-->
