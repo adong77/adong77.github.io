@@ -1,5 +1,6 @@
 ---
-title: About Us
+title: about
+layout: page
 date: 2017-06-28 20:42:31
 ---
 Welcome! This is my personal blog ([blog.ligene.cn](http://blog.ligene.cn)), where I hope to share ideas and resources that others might find helpful. If you have any question, please send me an email.
