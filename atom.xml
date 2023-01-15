@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2023-01-11T23:49:58.365Z</updated>
+  <updated>2023-01-15T12:15:06.859Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>生物信息学课程视频</title>
+    <link href="http://blog.ligene.cn/2023/01/14/bioinfoUCAS/"/>
+    <id>http://blog.ligene.cn/2023/01/14/bioinfoUCAS/</id>
+    <published>2023-01-14T09:55:51.000Z</published>
+    <updated>2023-01-15T12:15:06.859Z</updated>
+    
+    <content type="html"><![CDATA[<p>中国科学院大学(UCAS)刘翟老师的生物信息学课堂实录视频。很棒的课程，建议1.5X倍速播放学习。</p><span id="more"></span><ul><li>【生信】第1讲 生物信息学历史、研究主题、核心问题和研究意义</li></ul><p><a href="https://www.zhihu.com/zvideo/1372131252246528000">https://www.zhihu.com/zvideo/1372131252246528000</a></p><ul><li>【生信】第2讲 生物信息学简史</li></ul><p><a href="https://www.zhihu.com/zvideo/1372282669938728960">https://www.zhihu.com/zvideo/1372282669938728960</a></p><ul><li>【生信】第3讲 生物数据库</li></ul><p><a href="https://www.zhihu.com/zvideo/1372686306892427264">https://www.zhihu.com/zvideo/1372686306892427264</a></p><ul><li>【生信】第4讲 GO数据库内容</li></ul><p><a href="https://www.zhihu.com/zvideo/1372848253055250433">https://www.zhihu.com/zvideo/1372848253055250433</a></p><ul><li>【生信】第5讲 序列比对</li></ul><p><a href="https://www.zhihu.com/zvideo/1374056173092659200">https://www.zhihu.com/zvideo/1374056173092659200</a></p><ul><li>【生信】第6讲 数据库搜索</li></ul><p><a href="https://www.zhihu.com/zvideo/1374325131284779008">https://www.zhihu.com/zvideo/1374325131284779008</a></p><ul><li>【生信】第7讲 系统发生与分子进化</li></ul><p><a href="https://www.zhihu.com/zvideo/1374669659606679553">https://www.zhihu.com/zvideo/1374669659606679553</a></p><ul><li>【生信】第8讲 基于距离矩阵的方法</li></ul><p><a href="https://www.zhihu.com/zvideo/1374773473613492224">https://www.zhihu.com/zvideo/1374773473613492224</a></p><ul><li>【生信】第9讲 最大似然</li></ul><p><a href="https://www.zhihu.com/zvideo/1374831038770860032">https://www.zhihu.com/zvideo/1374831038770860032</a></p><ul><li>【生信】第10讲 蛋白质结构与功能</li></ul><p><a href="https://www.zhihu.com/zvideo/1375749377638711296">https://www.zhihu.com/zvideo/1375749377638711296</a></p><ul><li>【生信】第11讲 NGS基因组学</li></ul><p><a href="https://www.zhihu.com/zvideo/1400533197780770817">https://www.zhihu.com/zvideo/1400533197780770817</a></p><ul><li>【生信】第12讲 基本算法总结</li></ul><p><a href="https://www.zhihu.com/zvideo/1400534557929771008">https://www.zhihu.com/zvideo/1400534557929771008</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;中国科学院大学(UCAS)刘翟老师的生物信息学课堂实录视频。很棒的课程，建议1.5X倍速播放学习。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
+    
+    
+    <category term="Teaching" scheme="http://blog.ligene.cn/tags/Teaching/"/>
+    
+  </entry>
+  
+  <entry>
     <title>浅谈Nanopore三代测序技术</title>
     <link href="http://blog.ligene.cn/2023/01/11/Nanopore/"/>
     <id>http://blog.ligene.cn/2023/01/11/Nanopore/</id>
     <published>2023-01-11T09:35:13.000Z</published>
-    <updated>2023-01-11T23:49:58.365Z</updated>
+    <updated>2023-01-12T23:56:45.829Z</updated>
     
-    <content type="html"><![CDATA[<p>第三代测序技术与前两代测序技术相比，其最大的特点就是单分子测序，测序过程无需进行PCR扩增，实现了对每一条DNA分子的单独测序。其中，英国牛津纳米孔公司所开发的纳米孔（Nanopore）测序技术便是三代测序中的中流砥柱。2014年，其推出U盘大小的便携式MinION测序仪，仪器售价仅需$1000，据官网报道最长Reads可长达960Kb。从当前形势来看，一代测序因其准确度高，仍作为突变检测、单菌鉴定等的金标准而存在。以illumina HiSeq为代表的第二代短读长测序技术在测序市场上仍然占有绝对优势，主打低成本和高通量。但第三代测序技术（PacBio与Nanopore）近年来发展很快，主打长读长策略，直击二代测序短序列的软肋，已应用于基因组测序、甲基化研究和突变鉴定等多个研究领域。</p><span id="more"></span><h2 id="Nanopore测序原理"><a href="#Nanopore测序原理" class="headerlink" title="Nanopore测序原理"></a>Nanopore测序原理</h2><p>纳米孔测序，顾名思义，核心就是利用一个纳米孔，孔内共价结合有分子接头，将纳米孔蛋白固定在电阻膜上，然后使DNA双链解链成单链，再利用马达蛋白牵引核酸单链穿过纳米孔。当一条核酸链穿过纳米孔时，会对膜两边离子的稳定流动产生扰动，从而引起电阻膜上电流的变化。由于纳米孔的直径非常细小，仅允许单个核苷酸通过，而不同碱基的带电性质不一样，因此不同碱基通过蛋白纳米孔时对电流产生的干扰不同，通过实时监测并解码这些电流信号便可确定碱基序列，从而实现测序。纳米孔是对穿过的片段进行测序，而不管DNA片段的长度如何，而不是生成特定长度的序列，这可能是数百个碱基、或者更多个碱基的序列。Nanopore的长序列简化了重复区域的组装和测序，也提高了物种鉴定和宏基因组实验的速度。<br><img src="http://www.ligene.cn/images/blog/nanopore-1.jpg" alt="Nanopore-sequencing"></p><h2 id="Nanopore测序中的几种物质"><a href="#Nanopore测序中的几种物质" class="headerlink" title="Nanopore测序中的几种物质"></a>Nanopore测序中的几种物质</h2><ul><li>Reader（跨膜蛋白）：在自然界中，有一种可以嵌入到细胞膜中作为离子或分子通道的跨膜蛋白，具有天然的蛋白纳米孔。经过人为基因工程修饰后，得到Nanopore测序所需的Reader蛋白。</li><li>Membrane（电阻膜）：Reader蛋白会被嵌入到高电阻率的由人工合成的多聚物膜中，膜两侧是离子溶液，在两侧加不同的电位，离子就会在孔中流动，形成电流。</li><li>Motor（马达蛋白）：在Nanopore文库构建时，需要在接头上连接一种马达蛋白，用于将DNA或RNA分子推入纳米孔中。以DNA解螺旋酶作为 Motor为例，它除了可以解开双螺旋，使之变为单链，还可以提供推动力。</li><li>Tether：该蛋白用于锚定DNA或RNA链，防止其在溶液中飘动，并使其进入纳米孔中。<br><img src="http://www.ligene.cn/images/blog/nanopore-2.jpg" alt="Nanopore-sequencing2"></li></ul><h2 id="Nanopore测序的具体过程？"><a href="#Nanopore测序的具体过程？" class="headerlink" title="Nanopore测序的具体过程？"></a>Nanopore测序的具体过程？</h2><p>Nanopore测序是将人工合成的一种多聚物膜浸在离子溶液中，多聚物膜上布满了经改造的穿膜孔的跨膜通道蛋白（纳米孔），也就是Reader蛋白，在膜两侧施加不同的电压产生电压差，DNA链在马达蛋白的牵引下，解螺旋酶将双链DNA解开成单链；DNA单链分子通过一个孔道蛋白，孔道中有个充当转换器的蛋白分子；DNA单分子停留在孔道中，有一些离子通过带来电流变化，而不同的碱基带来的电流变化不同；转化器蛋白分子感受5个碱基的电流变化；根据电流变化的频谱，应用模式识别算法得到碱基序列。</p><p>Nanopore测序得到的序列文件的格式也是HDF5，下机产生后缀为Fast5的序列文件。Fast5文件可经由Poretools软件转换为Fastq文件或Fasta，然后进行后续数据分析。应用Poretools将fast5转换为fastq的示例：<a href="https://poretools.readthedocs.io/en/latest/content/examples.html#poretools-fastq">https://poretools.readthedocs.io/en/latest/content/examples.html#poretools-fastq</a></p><h2 id="Nanopore测序技术的主要优势？"><a href="#Nanopore测序技术的主要优势？" class="headerlink" title="Nanopore测序技术的主要优势？"></a>Nanopore测序技术的主要优势？</h2><ul><li>长读长：Reads可达Mb；适合进行大片段结构变异的检测或大基因组的拼接。</li><li>设备成本低：测序芯片可清洗再生，重复利用；</li><li>实时获得序列信息：最快可在1小时内完成测序流程及数据分析，满足动态检测宏基因组需求；</li><li>便携式测序装置：重量轻且占用空间小，可以随身携带随时测序；实时快速进行微生物分类鉴定。</li><li>直接测序：直接测序原始DNA和RNA，不需要进行PCR扩增，避免了扩增偏好性；保留了原始碱基修饰信息，能够直接读出甲基化的胞嘧啶。以往转录组分析由于无法直接对RNA进行测序，往往需要先对mRNA进行打断，再反转录为cDNA，无法获取和分析全长转录本。</li></ul><p>文字描述不容易理解，下面通过一个视频，更加直观的展示纳米孔测序。<br><video src="http://www.ligene.cn/images/blog/nanopore-sequencing.mp4" width="800px" height="600px" controls="controls"></video></p>]]></content>
+    <content type="html"><![CDATA[<p>第三代测序技术与前两代测序技术相比，其最大的特点就是单分子测序，测序过程无需进行PCR扩增，实现了对每一条DNA分子的单独测序。其中，英国牛津纳米孔公司所开发的纳米孔（Nanopore）测序技术便是三代测序中的中流砥柱。2014年，其推出U盘大小的便携式MinION测序仪，仪器售价仅需$1000，据官网报道最长Reads可长达960Kb。从当前形势来看，一代测序因其准确度高，仍作为突变检测、单菌鉴定等的金标准而存在。以illumina HiSeq为代表的第二代短读长测序技术在测序市场上仍然占有绝对优势，主打低成本和高通量。但第三代测序技术（PacBio与Nanopore）近年来发展很快，主打长读长策略，直击二代测序短序列的软肋，已应用于基因组测序、甲基化研究和突变鉴定等多个研究领域。</p><span id="more"></span><h2 id="Nanopore测序原理"><a href="#Nanopore测序原理" class="headerlink" title="Nanopore测序原理"></a>Nanopore测序原理</h2><p>纳米孔测序，顾名思义，核心就是利用一个纳米孔，孔内共价结合有分子接头，将纳米孔蛋白固定在电阻膜上，然后使DNA双链解链成单链，再利用马达蛋白牵引核酸单链穿过纳米孔。当一条核酸链穿过纳米孔时，会对膜两边离子的稳定流动产生扰动，从而引起电阻膜上电流的变化。由于纳米孔的直径非常细小，仅允许单个核苷酸通过，而不同碱基的带电性质不一样，因此不同碱基通过蛋白纳米孔时对电流产生的干扰不同，通过实时监测并解码这些电流信号便可确定碱基序列，从而实现测序。纳米孔是对穿过的片段进行测序，而不管DNA片段的长度如何，而不是生成特定长度的序列，这可能是数百个碱基、或者更多个碱基的序列。Nanopore的长序列简化了重复区域的组装和测序，也提高了物种鉴定和宏基因组实验的速度。<br><img src="https://www.ligene.cn/images/blog/nanopore-1.jpg" alt="Nanopore-sequencing"></p><h2 id="Nanopore测序中的几种物质"><a href="#Nanopore测序中的几种物质" class="headerlink" title="Nanopore测序中的几种物质"></a>Nanopore测序中的几种物质</h2><ul><li>Reader（跨膜蛋白）：在自然界中，有一种可以嵌入到细胞膜中作为离子或分子通道的跨膜蛋白，具有天然的蛋白纳米孔。经过人为基因工程修饰后，得到Nanopore测序所需的Reader蛋白。</li><li>Membrane（电阻膜）：Reader蛋白会被嵌入到高电阻率的由人工合成的多聚物膜中，膜两侧是离子溶液，在两侧加不同的电位，离子就会在孔中流动，形成电流。</li><li>Motor（马达蛋白）：在Nanopore文库构建时，需要在接头上连接一种马达蛋白，用于将DNA或RNA分子推入纳米孔中。以DNA解螺旋酶作为 Motor为例，它除了可以解开双螺旋，使之变为单链，还可以提供推动力。</li><li>Tether：该蛋白用于锚定DNA或RNA链，防止其在溶液中飘动，并使其进入纳米孔中。<br><img src="https://www.ligene.cn/images/blog/nanopore-2.jpg" alt="Nanopore-sequencing2"></li></ul><h2 id="Nanopore测序的具体过程？"><a href="#Nanopore测序的具体过程？" class="headerlink" title="Nanopore测序的具体过程？"></a>Nanopore测序的具体过程？</h2><p>Nanopore测序是将人工合成的一种多聚物膜浸在离子溶液中，多聚物膜上布满了经改造的穿膜孔的跨膜通道蛋白（纳米孔），也就是Reader蛋白，在膜两侧施加不同的电压产生电压差，DNA链在马达蛋白的牵引下，解螺旋酶将双链DNA解开成单链；DNA单链分子通过一个孔道蛋白，孔道中有个充当转换器的蛋白分子；DNA单分子停留在孔道中，有一些离子通过带来电流变化，而不同的碱基带来的电流变化不同；转化器蛋白分子感受5个碱基的电流变化；根据电流变化的频谱，应用模式识别算法得到碱基序列。</p><p>Nanopore测序得到的序列文件的格式也是HDF5，下机产生后缀为Fast5的序列文件。Fast5文件可经由Poretools软件转换为Fastq文件或Fasta，然后进行后续数据分析。应用Poretools将fast5转换为fastq的示例：<a href="https://poretools.readthedocs.io/en/latest/content/examples.html#poretools-fastq">https://poretools.readthedocs.io/en/latest/content/examples.html#poretools-fastq</a></p><h2 id="Nanopore测序技术的主要优势？"><a href="#Nanopore测序技术的主要优势？" class="headerlink" title="Nanopore测序技术的主要优势？"></a>Nanopore测序技术的主要优势？</h2><ul><li>长读长：Reads可达Mb；适合进行大片段结构变异的检测或大基因组的拼接。</li><li>设备成本低：测序芯片可清洗再生，重复利用；</li><li>实时获得序列信息：最快可在1小时内完成测序流程及数据分析，满足动态检测宏基因组需求；</li><li>便携式测序装置：重量轻且占用空间小，可以随身携带随时测序；实时快速进行微生物分类鉴定。</li><li>直接测序：直接测序原始DNA和RNA，不需要进行PCR扩增，避免了扩增偏好性；保留了原始碱基修饰信息，能够直接读出甲基化的胞嘧啶。以往转录组分析由于无法直接对RNA进行测序，往往需要先对mRNA进行打断，再反转录为cDNA，无法获取和分析全长转录本。</li></ul><p>文字描述不容易理解，下面通过一个视频，更加直观的展示纳米孔测序。</p><iframe src="https://www.bilibili.com/video/BV1La41147dB/?share_source=copy_web&vd_source=d833801a2195b5684770ca2be2c47655" width="800px" height="600px" frameborder="no" framespacing="0" allowfullscreen="true" scrolling="no" sandbox="allow-scripts allow-same-origin allow-popups"> </iframe><!-- <video src="https://www.bilibili.com/video/BV1La41147dB?t=63.7" width="510px" height="498px" controls="controls"></video> -->]]></content>
     
     
     <summary type="html">&lt;p&gt;第三代测序技术与前两代测序技术相比，其最大的特点就是单分子测序，测序过程无需进行PCR扩增，实现了对每一条DNA分子的单独测序。其中，英国牛津纳米孔公司所开发的纳米孔（Nanopore）测序技术便是三代测序中的中流砥柱。2014年，其推出U盘大小的便携式MinION测序仪，仪器售价仅需$1000，据官网报道最长Reads可长达960Kb。从当前形势来看，一代测序因其准确度高，仍作为突变检测、单菌鉴定等的金标准而存在。以illumina HiSeq为代表的第二代短读长测序技术在测序市场上仍然占有绝对优势，主打低成本和高通量。但第三代测序技术（PacBio与Nanopore）近年来发展很快，主打长读长策略，直击二代测序短序列的软肋，已应用于基因组测序、甲基化研究和突变鉴定等多个研究领域。&lt;/p&gt;</summary>
@@ -42,9 +63,9 @@
     <link href="http://blog.ligene.cn/2022/06/27/TruSeq-Stranded-mRNA-sequencing/"/>
     <id>http://blog.ligene.cn/2022/06/27/TruSeq-Stranded-mRNA-sequencing/</id>
     <published>2022-06-26T22:11:53.000Z</published>
-    <updated>2023-01-11T23:55:31.049Z</updated>
+    <updated>2023-01-15T12:20:49.365Z</updated>
     
-    <content type="html"><![CDATA[<p>链特异性测序</p><span id="more"></span><h2 id="链特异性测序文库构建流程"><a href="#链特异性测序文库构建流程" class="headerlink" title="链特异性测序文库构建流程"></a>链特异性测序文库构建流程</h2><p>这里以TruSeq Stranded mRNA sequencing为例，介绍链特异性测序文库的构建流程，如图所示，红色始终代表sense strand的信息，天蓝色代表antisense strand的信息。<br><img src="http://www.ligene.cn/images/Tru-Seq-library.png" alt="TruSeq Stranded mRNA sequencing libarry"></p><ul><li>首先，利用成熟mRNA带polyA尾的特点，通过oligo dT来富集mRNA；</li><li>接下来，使用超声波对mRNA进行片段化，然后再使用随机引物进行反转录，这个过程就是第一条链（天蓝色）的合成；</li><li>接下来，再使用RNaseH酶消化降解掉杂合链中的RNA，然后再进行第二链（红色）的合成，注意这里不使用dTTP，而是使用dUTP。</li><li>然后，先使用Klenow酶来给3’末端添加一个突出的A；再连接adapter，注意这里的adapter结构；</li><li>然后再进行PCR反应，由于DNA聚合酶不能以dUTP为模板，所以以sense strand为模板的链没有办法参与到PCR中，因此最终的双链DNA都是右下角那样的。<br>（需要先降解dUTP链？）<br>我们最终可以看到，Read1测到的是antisense strand的信息，Read2测到的是sense strand的信息，这和我们之前的理解是一样的哈。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>链特异性测序</p><span id="more"></span><h2 id="链特异性测序文库构建流程"><a href="#链特异性测序文库构建流程" class="headerlink" title="链特异性测序文库构建流程"></a>链特异性测序文库构建流程</h2><p>这里以TruSeq Stranded mRNA sequencing为例，介绍链特异性测序文库的构建流程，如图所示，红色始终代表sense strand的信息，天蓝色代表antisense strand的信息。<br><img src="http://www.ligene.cn/images/blog/Tru-Seq-library.png" alt="TruSeq Stranded mRNA sequencing libarry"></p><ul><li>首先，利用成熟mRNA带polyA尾的特点，通过oligo dT来富集mRNA；</li><li>接下来，使用超声波对mRNA进行片段化，然后再使用随机引物进行反转录，这个过程就是第一条链（天蓝色）的合成；</li><li>接下来，再使用RNaseH酶消化降解掉杂合链中的RNA，然后再进行第二链（红色）的合成，注意这里不使用dTTP，而是使用dUTP。</li><li>然后，先使用Klenow酶来给3’末端添加一个突出的A；再连接adapter，注意这里的adapter结构；</li><li>然后再进行PCR反应，由于DNA聚合酶不能以dUTP为模板，所以以sense strand为模板的链没有办法参与到PCR中，因此最终的双链DNA都是右下角那样的。<br>（需要先降解dUTP链？）<br>我们最终可以看到，Read1测到的是antisense strand的信息，Read2测到的是sense strand的信息，这和我们之前的理解是一样的哈。</li></ul>]]></content>
     
     
     <summary type="html">&lt;p&gt;链特异性测序&lt;/p&gt;</summary>
@@ -84,7 +105,7 @@
     <link href="http://blog.ligene.cn/2022/04/03/bioedit-blast/"/>
     <id>http://blog.ligene.cn/2022/04/03/bioedit-blast/</id>
     <published>2022-04-03T08:09:47.000Z</published>
-    <updated>2023-01-12T00:52:38.435Z</updated>
+    <updated>2023-01-15T16:24:06.261Z</updated>
     
     <content type="html"><![CDATA[<p>本练习使用BioEdit进行本地BLAST操作，鉴定16S rDNA测序序列的物种分类。</p><span id="more"></span><p>BLAST是“Basic Local Alignment Search Tool”的简称，顾名思义，它是基于局部比对算法的搜索工具，可将输入的查询序列(核酸或蛋白质)与数据库中的已知序列进行比对，获得与查询序列相似的已知序列，从而判断查询序列的来源或进化关系等。</p><p>一般可通过NCBI网站使用在线BLAST工具，但有时也需要进行本地BLAST，如实验室新测序了一个新细菌的基因组，还没有将此基因组上传的GenBank数据库，将无法通过NCBI在线BLAST搜索此新基因组中的基因。NCBI网站提供最新版本的本地BLAST软件(<a href="https://blast.ncbi.nlm.nih.gov)./">https://blast.ncbi.nlm.nih.gov)。</a></p><p>本练习使用bioedit软件实现BLAST搜索同源序列，鉴定一个16S测序序列的物种分类。BioEdit使用比较方便，整合了构建数据库和各种BLAST算法(如下图)，但BioEdit集成的BLAST软件是比较老的版本。<br><img src="http://www.ligene.cn/images/book/bioedit-1.png" alt="Local BLAST"></p><blockquote><p>注：可从配套百度网盘下载bioedit软件及相关文件:<br><a href="https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA">https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA</a> (提取码: txh5)。</p></blockquote><h3 id="下载并安装BioEdit"><a href="#下载并安装BioEdit" class="headerlink" title="下载并安装BioEdit"></a>下载并安装BioEdit</h3><p>安装BioEdit的默认路径为C:\BioEdit\，如要修改安装路径，软件可能会报错。</p><blockquote><p>可从配套百度网盘文件夹Resources目录下载bioedit软件。</p></blockquote><h3 id="准备查询序列与数据库"><a href="#准备查询序列与数据库" class="headerlink" title="准备查询序列与数据库"></a>准备查询序列与数据库</h3><p>可使用核酸或蛋白质序列，本练习使用：</p><ul><li>1)查询序列文件(16S_rRNA_sequences.txt): 两条测序得到的肠道微生物16S rDNA序列。</li><li>2)细菌16S序列数据库(16SMicrobial.tar.gz): 此数据库为从NCBI网站下载的已经构建好的BLAST数据库，解压后会看到8个文件。</li></ul><blockquote><p>注：两文件可从配套网盘文件夹ch05BLAST下载。数据库文件是压缩文件需要解压使用，可使用解压缩软件，如WINRAR、7-zip等。</p></blockquote><h3 id="准备本地序列数据库"><a href="#准备本地序列数据库" class="headerlink" title="准备本地序列数据库"></a>准备本地序列数据库</h3><p>如果要把基因组数据做成本地数据库，可通过: </p><ul><li>1)菜单create a local nucleotide database file建立本地DNA数据库</li><li>2)菜单create a local protein database file建立本地蛋白质数据库<br>用于建库的原始数据需要做成fasta格式。</li></ul><p> 本练习直接用NCBI网站提供的已经格式化的16S序列数据库，不需要从头建库：<br>  将前面解压后16SMicrobial目录下的8个文件复制到BioEdit安装目录下的database文件夹(c:\bioedit\database)即可。</p><ol start="4"><li>运行Local BLAST</li></ol><p>Local BLAST窗口的参数设置如图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-2.png" alt="BLAST参数"></p><ul><li><p>由于本练习所用查询序列与数据库序列都是DNA序列，因此Program选blastn，数据库选择Nucleotide Database的16SMicrobial，注意要点击一下16SMicrobial下拉框并选择此数据库。如果为蛋白质序列则要相应选blastp与Protein Database。</p></li><li><p>将16SRNA sequences.txt中的DNA序列复制粘贴到Query输入框中。</p><blockquote><p>注意不要复制fasta格式中的注释行(&gt;开头)。</p></blockquote></li><li><p>另外，将E-value值设置为1e-6或更小的值，默认值1.0将找到许多不相似的序列，e-value值越小，能找到的序列越相似。但e-value设置为一个很小的值可能找不相序的序列(no hits)，可根据需要调整e-value。其它参数可不用设置。</p></li><li><p>最后点击Do Search进行分析。</p></li></ul><h3 id="解读BLAST结果"><a href="#解读BLAST结果" class="headerlink" title="解读BLAST结果"></a>解读BLAST结果</h3><p>BLAST结果如下图所示：<br><img src="http://www.ligene.cn/images/book/bioedit-3.png" alt="BLAST结果"></p><p>结果部分前面有参考文献、碱基长度等信息，下面是获得的同源序列，显示数据库对应序列的ID及注释信息，并根据比对分数(Score)由高到低排列。上图所示的比对匹配分数最高的序列是源自艰难梭菌菌株(clostridium difficile)，即此菌分类可鉴定为艰难梭菌。</p><blockquote><p>注意，16S序列比对可能与不同物种的比对具有相同的分数，因此无法确定哪个菌株最合适，说明只靠16S序列信息有时是不能注释到种(species)水平。</p></blockquote>]]></content>
     
@@ -96,9 +117,9 @@
     <category term="Bioinformatics" scheme="http://blog.ligene.cn/categories/Bioinformatics/"/>
     
     
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
-    
     <category term="BLAST" scheme="http://blog.ligene.cn/tags/BLAST/"/>
+    
+    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
     
   </entry>
   
@@ -422,27 +443,6 @@
     
     
     <category term="C" scheme="http://blog.ligene.cn/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.ligene.cn/2018/01/01/hello-world/"/>
-    <id>http://blog.ligene.cn/2018/01/01/hello-world/</id>
-    <published>2018-01-01T01:31:37.000Z</published>
-    <updated>2022-02-22T12:40:13.381Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /mnt/c/hexoBlog</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo g -d<span class="comment">#generate &amp; deploy</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
-    
-    
-    <category term="Hexo" scheme="http://blog.ligene.cn/tags/Hexo/"/>
     
   </entry>
   
