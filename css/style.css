@@ -89,8 +89,8 @@ div {
     bottom: 0; }
     #header #nav-menu a {
       display: inline-block;
-      padding: 3px 10px 3px;
-      line-height: 27px;
+      padding: 3px 12px 3px;
+      line-height: 30px;
       color: #444;
       font-size: 13px;
       border: 1px solid transparent; }
@@ -429,15 +429,15 @@ div {
   #sidebar {
     border-left-width: 0px; }
   #header .site-name {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center; }
   #header #nav-menu {
     position: relative;
     text-align: center; }
     #header #nav-menu a {
-      padding: 0 5px;
-      line-height: 25px;
-      height: 25px;
+      padding: 0 8px;
+      line-height: 27px;
+      height: 27px;
       font-size: 13px; } }
 
 /* small*/
