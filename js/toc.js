@@ -7,8 +7,8 @@ if (toc != null) {
 	window.addEventListener("scroll", scrollcatelogHandler);
 	var tocPosition = toc.offsetTop;
 	function scrollcatelogHandler(e) {
-		 var event = e || window.event,
-			target = event.target || event.srcElement;
+		//  var event = e || window.event,
+		//      target = event.target || event.srcElement;
 		 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 		 if (scrollTop >  tocPosition -60) {
 			toc.classList.add("stoc-fixed");

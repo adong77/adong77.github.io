@@ -1757,7 +1757,7 @@ html[data-dark='true'] {
   line-height: 1em;
   font-weight: 700; }
   #stoc .active {
-    color: #0085a1;
+    color: #121212;
     border-radius: 4px;
     background-color: #F5F5F5; }
   #stoc .toc {
