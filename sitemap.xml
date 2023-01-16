@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ligene.cn/history/index.html</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/about/index.html</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -284,15 +293,6 @@
     <loc>http://blog.ligene.cn/categories/index.html</loc>
     
     <lastmod>2023-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/history/index.html</loc>
-    
-    <lastmod>2022-08-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
