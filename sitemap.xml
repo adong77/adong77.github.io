@@ -335,20 +335,6 @@
 
   
   <url>
-    <loc>http://blog.ligene.cn/tags/Tools/</loc>
-    <lastmod>2023-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/tags/AI/</loc>
-    <lastmod>2023-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ligene.cn/tags/BLAST/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,7 +349,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/Teaching/</loc>
+    <loc>http://blog.ligene.cn/tags/Tools/</loc>
+    <lastmod>2023-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/tags/AI/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -384,14 +377,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/WSL/</loc>
+    <loc>http://blog.ligene.cn/tags/Teaching/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/Bayes/</loc>
+    <loc>http://blog.ligene.cn/tags/WSL/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -419,14 +412,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/C/</loc>
+    <loc>http://blog.ligene.cn/tags/Bayes/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/Hexo/</loc>
+    <loc>http://blog.ligene.cn/tags/C/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -440,7 +433,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ligene.cn/tags/FDR/</loc>
+    <loc>http://blog.ligene.cn/tags/Hexo/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -448,6 +441,13 @@
   
   <url>
     <loc>http://blog.ligene.cn/tags/Tree/</loc>
+    <lastmod>2023-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ligene.cn/tags/FDR/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -477,6 +477,13 @@
 
   
   <url>
+    <loc>http://blog.ligene.cn/categories/Bioinformatics/</loc>
+    <lastmod>2023-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ligene.cn/categories/Genomics/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -485,13 +492,6 @@
   
   <url>
     <loc>http://blog.ligene.cn/categories/Statistics/</loc>
-    <lastmod>2023-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ligene.cn/categories/Bioinformatics/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
