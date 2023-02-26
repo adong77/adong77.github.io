@@ -1,5 +1,7 @@
 ---
 title: Javascript-based bioinformatics
+comments: true
+toc: false
 date: 2017-08-26 09:17:43
 tags: Javascript
 categories: Programming

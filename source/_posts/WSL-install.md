@@ -1,11 +1,12 @@
 ---
 title: Ubuntu 20.04 LTS 更换阿里云源
 comments: true
+toc: true
 date: 2022-03-16 05:45:02
 tags: WSL
-categories: Tutorials
+categories: Linux
 ---
-Ubuntu 20.04 LTS 更换阿里云源
+## Ubuntu 20.04 LTS 更换阿里云源
 
 1. 先备份原始源文件：
 `sudo cp /etc/apt/source.list /etc/apt/source.list.backup`

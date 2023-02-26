@@ -42,7 +42,7 @@ categories: Tutorials
 ```
 $ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
 $ npm install hexo-renderer-pug --save
-$ npm install hexo-renderer-sass --save
+$ npm install hexo-renderer-sass-next --save <!-- $ npm install hexo-renderer-sass --save -->
 ```
 主题的配置参考：https://blog.csdn.net/vosang/article/details/78462021
 
@@ -62,6 +62,7 @@ menu:
 ```
 图标用的是awesome font，http://www.fontawesome.com.cn/faicons/，可更换。
 
+> 注意：配置所有的_config.yml文件时（包括theme文件夹中的_config.yml），所有的冒号:后边都要加一个空格，否则执行hexo命令时会报错。
  
 # GitHub
  ssh-keygen -t rsa -C "youdng@hotmail.com"
@@ -115,8 +116,6 @@ github.map.fastly.net.  19  IN  A   103.245.222.133
 
 作者：王奥(OX)
 链接：https://www.zhihu.com/question/24422335/answer/45424856
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
 

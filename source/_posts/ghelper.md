@@ -1,6 +1,7 @@
 ---
 title: 谷歌助手使用谷歌学术
 comments: true
+toc: true
 date: 2020-04-08 21:46:29
 tags: Tools
 categories: Tutorials
@@ -20,7 +21,7 @@ categories: Tutorials
 
 ## 3. 登录Ghelper
 安装完成后，导航栏就会出现Ghelper图标。点击导航栏的Ghelper图标进入到登录页面，如下图所示：
-![ghelper login](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/ghelper-1.png)
+![ghelper login](https://www.ligene.cn/images/blog/ghelper-1.png)
 
 第一次使用Ghelper要先注册一个ghelper账号，可以通过上图的新用户注册(Signup)，用任意一个邮箱注册后就可以登陆(Login)。
 >注意：这个Ghelper账户不是谷歌或微软账户，不要尝试用原来的谷歌/微软用户登录:)

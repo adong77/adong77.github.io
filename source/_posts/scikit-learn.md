@@ -1,6 +1,7 @@
 ---
 title: scikit learn
 comments: true
+toc: true
 date: 2022-03-16 05:51:29
 tags: [AI]
 categories: [Programming]

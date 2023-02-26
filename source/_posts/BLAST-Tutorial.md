@@ -1,5 +1,7 @@
 ---
 title: BLAST+使用教程
+comments: true
+toc: true
 date: 2017-07-05 13:39:37
 tags: [BLAST, IGV]
 categories: Bioinformatics

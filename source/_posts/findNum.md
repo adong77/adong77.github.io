@@ -1,8 +1,9 @@
 ---
 title: findNum
 comments: true
+toc: false
 date: 2021-02-25 14:46:34
-tags:
+tags: C
 categories: Programming
 ---
 为了解决一道小学三年级的数学题，比较笨的我只能写个小程序，还好大学时学生C语言！

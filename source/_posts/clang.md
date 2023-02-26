@@ -1,5 +1,7 @@
 ---
 title: 编程语言之C语言
+comments: true
+toc: true
 date: 2018-01-05 08:25:23
 tags:  C
 categories: Programming
@@ -31,4 +33,4 @@ printf("Hello World!");
 `$./helloworld`
 //输出"Hello World!"。
  
-![C programming](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/cprogramming.png)
+![C programming](https://www.ligene.cn/images/blog/cprogramming.png)

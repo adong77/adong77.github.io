@@ -1,10 +1,12 @@
 ---
 title: Ubuntu 16.04LTS安装QIIME
+comments: true
+toc: true
 date: 2017-09-03 14:55:56
-tags: qiime
+tags: 16S
 categories: Tutorials
 ---
-Ubuntu 16.04LTS安装QIIME
+## Ubuntu 16.04LTS安装QIIME
 
 1. 构建Ubuntu环境
 Linux已内置python且version>2.7，需安装其余必备软件包，版本验证 python --version。

@@ -1,5 +1,7 @@
 ---
 title: Mapping contigs onto reference genome
+comments: true
+toc: true
 date: 2017-07-13 08:40:17
 tags: [BLAST,IGV]
 categories: Genomics

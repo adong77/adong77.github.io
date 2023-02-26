@@ -25,14 +25,14 @@ valine: ## See: https://valine.js.org
   placeholder: Writing comments here ## Comment box placeholders.
   avatar: "mm" ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   pageSize: 10 ## Number of comments per page.
-  guest_info: nick,mail,link ## Attributes of reviewers.
+  guest_info: nick,mail ## Attributes of reviewers.
 minivaline: ## See: https://github.com/MiniValine/MiniValine
   enable: false ## If you want to use MiniValine comment system, please set the value to true.
   appId: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
   appKey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
   placeholder: Write a Comment ## Comment box placeholder.
   adminEmailMd5: ## The MD5 of Admin Email to show Admin Flag.
-  mathjax: true ## Support MathJax.
+  math: true ## Support MathJax.
   md: true ## Support Markdown.
   # MiniValine's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
@@ -42,7 +42,10 @@ minivaline: ## See: https://github.com/MiniValine/MiniValine
 waline: ## See: https://waline.js.org/
   enable: false ## If you want to use Waline comment system, please set the value to true.
   serverURL: ## Your server url, e.g. https://your-domain.vercel.app
-  pageSize: ## The desired number of comments shown in each page.
+  pageSize: 30 ## The desired number of comments shown in each page.
+  wordLimit: 500 ## Limit the number of words in comments, 0 means no limit.
+  requiredMeta: ['nick','mail'] ## Required user information, e.g. ['nick','mail','link']
+  count: 5 ## The number comments displayed in the recent_comments widget, default is 10.
 utterances: ## See: https://utteranc.es
   enable: false ## If you want to use Utterances comment system, please set the value to true.
   repo: ## The repository utterances will connect to, e.g. tufu9441/comments
@@ -59,13 +62,14 @@ baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 self_search: true ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
-baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+baidu_analytics: 0ad9c65dc343a2a6d37cb95527713113 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+microsoft_clarity: ## Your Microsoft Clarity tracking id, e.g. zg2ctuea9j
 fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
-wordcount: false ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
+wordcount: true ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
   enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
@@ -77,14 +81,14 @@ donate:
   enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: /about/AliPayQR.jpg ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: /about/wechat_qrcode.jpg  ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  wechat_qr: /about/wechat_qrcode.jpg ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
 post_copyright:
-  enable: false ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
-  author: ## Your author name, e.g. tufu9441
-  copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+  enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+  author: adong ## Your author name, e.g. tufu9441
+  copyright_text: 本站所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 CN 许可协议。转载请注明出处！ ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 love: false ## If you want the love to appear when you click anywhere, set the value to true.
 plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-plantuml (https://github.com/miao1007/hexo-filter-plantuml).
   render: "PlantUMLServer" ## Local or PlantUMLServer.
@@ -93,6 +97,7 @@ copycode: true ## If you want to enable one-click copy of the code blocks, set t
 dark: false ## If you want to toggle between light/dark themes, set the value to true.
 totop: true ## If you want to use the rocketship button to return to the top, set the value to true.
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
+post_content_length: 180 ## Set the length of the post summary displayed on home page when no description written.
 
 menu:
   - page: home
@@ -102,19 +107,16 @@ menu:
     directory: archives/
     icon: fa-archive
   - page: 教程
-    directory: bigbook/
+    directory: ../bigbook/
     icon: fa-book
   - page: 下载
     directory: downloads/
     icon: fa-download
-  - page: history
-    directory: history/
-    icon: fa-tag  
   - page: about
     directory: about/
     icon: fa-user
 
-widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
+widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
   - search
   - category
   - tag
@@ -122,15 +124,45 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - recent_comments
   - links
 
+info:
+  avatar: /avatar.png
+  discription: To be a better man.
+  outlinkitem:
+    - name: ligene
+      outlink: https://www.ligene.cn
+      message: Web
+    - name: envelope
+      outlink: mailto:admin@ligene.cn
+      message: Email
+    - name: github
+      outlink: https://github.com/lilabZSU
+      message: Github
+    - name: rss
+      outlink: /atom.xml
+      message: RSS
+
 links:
   - title: 大道至简
     url: https://www.haomwei.com/
-  - title: LiLab
-    url: http://www.ligene.cn/lilab
+    src: https://www.haomwei.com/favicon.ico
+    desc: theme website
+  - title: LIGENE
+    url: https://www.ligene.cn
+    src: https://www.ligene.cn/favicon.ico
+    desc: my Website
   - title: An Introduction to Applied Bioinformatics
     url: http://readiab.org/
+    src: http://readiab.org/favicon.ico
+    desc: IAB book
   - title: Bioinformatics Tutorials
-    url: https://lulab.gitbook.io/
+    url: https://book.ncrnalab.org/teaching/
+    src: https://book.ncrnalab.org/favicon.ico
+    desc: LuLab's book
+  - title: Bioinformatics Workbook
+    url: https://bioinformaticsworkbook.org/
+    src: https://bioinformaticsworkbook.org/favicon.ico
+    desc: A tutorial to help scientists design their projects and analyze their data. 
+    
 
 timeline:
   - num: 1
@@ -140,7 +172,7 @@ timeline:
   - num: 3
     word: 2022/08/11-将个人首页完全用HTML、CSS与JavaScript编写，尽量简化。
   - num: 4
-    word: More待续
+    word: More
 
 # Static files
 js: js

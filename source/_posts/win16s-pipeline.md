@@ -1,8 +1,9 @@
 ---
 title: Windows系统下16S rDNA扩增子数据分析流程
 comments: true
+toc: true
 date: 2019-06-08 21:51:37
-tags: [QIIME, WSL]
+tags: [16S, WSL]
 categories: Genomics
 ---
 本16S rRNA基因扩增子测序数据分析流程包括：首先对样本测序数据进行质控与预处理；然后得到样本的OTU聚类与物种分类信息；在查看样品的细菌种类后，统计每个样品的差异菌种。For more details about 16S rRNA analysis, recommend following the tutorial: https://rachaellappan.github.io/16S-analysis/index.html

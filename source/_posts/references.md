@@ -1,5 +1,7 @@
 ---
 title: 文献检索
+comments: true
+toc: true
 date: 2017-10-13 16:40:46
 tags: PubMed
 categories: Tutorials

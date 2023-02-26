@@ -1,5 +1,7 @@
 ---
 title: Notepad2代替Windows记事本
+comments: true
+toc: true
 date: 2017-07-04 21:31:15
 tags: Tools
 categories: Tutorials
@@ -10,7 +12,7 @@ Notepad2是一款优秀的**轻量级文本编辑器**，而Notepad2-mod又增�
 <!--more-->
 ### 1.安装
 安装过程中注意选上：“Replace Windows notepad with Notepad2-mod”(下图),将自动代替Windows自带的记事本。
-![Notepad2 Setup](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/notepad2_setup.png)
+![Notepad2 Setup](https://www.ligene.cn/images/blog/notepad2_setup.png)
  
 ### 2.添加Notepad2到右键菜单，方便右键直接打开文档:
 把以下内容拷到任意以.reg为后缀的文件（如notepad2_shortcut.reg），后运行导入系统注册表即可。

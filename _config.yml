@@ -5,17 +5,17 @@
 # Site
 title: LIGENE
 subtitle: Notes of Bioinformatics and Genomics
-description: Notes of Bioinformatics & Genomics 
+description: 
 author: adong
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.ligene.cn/blog
-root: /blog/
 #url: http://blog.ligene.cn
 #root: /
+url: https://www.ligene.cn/blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -68,9 +68,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: even
 #theme: butterfly
-#theme: maupassant
+theme: maupassant
 
 #Sitemap
 sitemap:
