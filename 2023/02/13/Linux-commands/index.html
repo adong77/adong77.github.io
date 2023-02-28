@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Linux文本处理命令 | LIGENE</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://hm.baidu.com/hm.js?' + '0ad9c65dc343a2a6d37cb95527713113';
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Linux文本处理命令</h1><a id="logo" href="/.">LIGENE</a><p class="description">Notes of Bioinformatics and Genomics</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/../bigbook/"><i class="fa fa-book"> 教程</i></a><a href="/downloads/"><i class="fa fa-download"> 下载</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Linux文本处理命令</h1><div class="post-meta">2023-02-13<span> | </span><span class="category"><a href="/categories/Linux/">Linux</a></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 962</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 3</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" href="/2023/02/13/Linux-commands/#vcomment"><span class="valine-comment-count" data-xid="/2023/02/13/Linux-commands/"></span><span> 条评论</span></a><div class="post-content"><p>常用的Linux命令学习资源</p>
+<span id="more"></span>
+<h2 id="线上Linux环境"><a href="#线上Linux环境" class="headerlink" title="线上Linux环境"></a>线上Linux环境</h2><p>CSDN网站提供一个线上Linux环境，可以在线练习Linux命令的使用。</p>
+<ul>
+<li>线上Linux环境: <a target="_blank" rel="noopener" href="https://edu.csdn.net/lab/36675?targetLesson=2692">https://edu.csdn.net/lab/36675?targetLesson=2692</a></li>
+<li>Linux入门: <a target="_blank" rel="noopener" href="https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747">https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747</a></li>
+</ul>
+<h2 id="Linux文本处理命令"><a href="#Linux文本处理命令" class="headerlink" title="Linux文本处理命令"></a>Linux文本处理命令</h2><p>Linux 命令很多，掌握最实用的一批命令，对于每个实用命令，又只需掌握20%最高频操作。</p>
+<h3 id="grep-匹配"><a href="#grep-匹配" class="headerlink" title="grep 匹配"></a>grep 匹配</h3><p>一款强大的文本搜索工具，能使用正则表达式匹配模式搜索文本，并把匹配的行打印出来 </p>
+<ul>
+<li>格式: grep [options] pattern [file]</li>
+</ul>
+<p>常用参数设置</p>
+<ul>
+<li>-v 反向选择，输出没有匹配的行, grep -v hello test.txt</li>
+<li>-n 显示匹配成功的行所在的行号 </li>
+<li>-c 统计匹配成功的行的数量 </li>
+<li>-w 完全匹配 </li>
+<li>-o 只输出匹配的内容 </li>
+<li>-f 从文件中读取pattern </li>
+<li>-E 指定正则表达式模式, grep -E “\d.” test.txt </li>
+<li>-A 3 额外输出匹配行的后3行,A表示after, grep movie -A 3 test.txt</li>
+<li>-B 3 额外输出匹配行的前3行, B表示before</li>
+<li>-C 3 额外输出所在行的前后3行，C表示center</li>
+</ul>
+<h3 id="sed-流编辑器"><a href="#sed-流编辑器" class="headerlink" title="sed 流编辑器"></a>sed 流编辑器</h3><p>sed 命令可以用来替换文本行、删除文本行</p>
+<ul>
+<li>格式:sed [opition] ‘script’ file(s) | sed [-n] -f scriptfile file(s)</li>
+</ul>
+<p>常用参数设置</p>
+<ul>
+<li>-n 禁止显示所有输入内容，只显示经过sed处理的行</li>
+<li>-e 直接在命令列模式上进行sed的动作编辑。接要执行的一个或者多个命令</li>
+<li>-f 执行含有sed工作的文件</li>
+<li>-r sed的动作支持的扩展正则</li>
+<li>-i 直接修改读取的文件内容，不修改</li>
+</ul>
+<p>用法<br>sed ‘’<filename> &#x3D; cat <filename><br>script: [address[,address]] [!] command [arguments]</p>
+<p>第一部分：作用区域</p>
+<ul>
+<li>按行号分，n,m n到m行，n,+m n到n加m行，n~m 从n行开始，每隔m行取一次匹配模式 ‘&#x2F;pattern&#x2F;command’</li>
+</ul>
+<p>第二部分：command,可以使用;号，同时使用多个命令</p>
+<ul>
+<li>p 打印p 打印</li>
+<li>d 删除</li>
+<li>i 在目标行之前插入新的行</li>
+<li>a 在目标行之后插入新行</li>
+<li>c 替换</li>
+<li>w 写</li>
+<li>r 读</li>
+<li>&#x3D; 打印行号</li>
+<li>s 匹配替换，s&#x2F;pattern&#x2F;replacement&#x2F;[flags],其中，n替换第几处，g 替换所有的。p,w。</li>
+<li>y 转换, y&#x2F;inchars&#x2F;outchars&#x2F;,&#x2F;^&gt;&#x2F;!,反选</li>
+</ul>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><ul>
+<li>查找并替换每行第一个”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;‘ 1.txt</li>
+<li>查找替换每行中所有的”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;g’ 1.txt</li>
+<li>删除含有”hello”的行：sed ‘&#x2F;hello&#x2F;d’ 1.txt</li>
+<li>删除第2行：sed ‘2d’ 1.txt</li>
+<li>删除第最后一行：sed ‘d’ 1.txt</li>
+<li>删除第2行到最后一行：sed ‘2,d’ 1.txt</li>
+</ul>
+<h3 id="awk-文本分析语言"><a href="#awk-文本分析语言" class="headerlink" title="awk 文本分析语言"></a>awk 文本分析语言</h3><p>awk是一种编程语言，用于在linux下对文本和数据进行按行处理。简单理解就是对文本的每行执行命令awk指定的脚本，它的基本命令格式如下：</p>
+<ul>
+<li>格式:awk [options] ‘script’ var &#x3D; value file(s) | awk [options] -f scriptfile var &#x3D; value file(s)</li>
+</ul>
+<p>常用参数设置</p>
+<p>-F 设定分隔符 </p>
+<p>script结构</p>
+<ul>
+<li>awk ‘{script}’ </li>
+<li>awk ‘&#x2F;pattern&#x2F;{script}’ </li>
+<li>awk ‘BEGIN{script} {script} END {script}’ 可以执行三段代码</li>
+</ul>
+<p>内置变量，&#96;awk ‘BEGIN{内置变量}{}’</p>
+<ul>
+<li>FS 定义输入字段分隔符。同-F</li>
+<li>RS 定义输入记录分隔符</li>
+<li>OFS 定义输出字段分隔符</li>
+<li>ORS 定义输出字段分隔符</li>
+<li>NF 数据文件中的字段总数，可以理解为列数</li>
+<li>NR 已处理的载入记录数，行数</li>
+<li>-v 自定义变量或传递外部变量</li>
+</ul>
+<h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4><ol>
+<li>打印每行的最后1列(默认用空格分离): awk ‘{print $NF}’ 1.txt</li>
+<li>打印每行的行号: awk ‘{print NR}’ 1.txt</li>
+<li>对第三列的相同数据对应的第一列求和:<br>awk ‘{sum[$3]+&#x3D;$1}END{for(c in sum){print c,sum[c]}}</li>
+</ol>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Linux文本处理命令</p><p><span>文章作者：</span>adong</p><p><span>发布时间：</span>2023-02-13</p><p><span>最后更新：</span>2023-02-28</p><p><span>原始链接：</span><a href="/2023/02/13/Linux-commands/">http://blog.ligene.cn/2023/02/13/Linux-commands/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="http://blog.ligene.cn/2023/02/13/Linux-commands/"></i></span></p><p><span>版权声明：</span>本站所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 CN 许可协议。转载请注明出处！</p></div><br><div class="tags"></div><div class="post-nav"><a class="next" href="/2023/01/14/bioinfoUCAS/">生物信息学课程视频</a></div><div id="vcomment"></div><script src="//c.lcfile.com/static/js/av-core-mini-0.6.4.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'MNJKe5WJm5b2Ef1eGugrbjeW-9Nh9j0Va',
+  appKey:'JidWqAC9XmARrOScdPmYsjOc',
+  placeholder:'Writing comments here',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})
+</script></div></div></div><script type="text/javascript" src="/js/toc.js?v=1.0.0" async></script><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar-toc"><div class="stoc-article" id="sidebar-stoc"><strong class="stoc-title"><i class="fa fa-bars"> CONTENTS </i></strong><div class="toc-nav" id="stoc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E4%B8%8ALinux%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text">线上Linux环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">Linux文本处理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep-%E5%8C%B9%E9%85%8D"><span class="toc-number">2.1.</span> <span class="toc-text">grep 匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sed-%E6%B5%81%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">2.2.</span> <span class="toc-text">sed 流编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E5%AD%90"><span class="toc-number">2.2.1.</span> <span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#awk-%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90%E8%AF%AD%E8%A8%80"><span class="toc-number">2.3.</span> <span class="toc-text">awk 文本分析语言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E5%AD%90-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">例子</span></a></li></ol></li></ol></li></ol></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a rel="nofollow" target="_blank" href="https://www.ligene.cn">LIGENE |</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo |</a> Theme <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Maupassant.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
