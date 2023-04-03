@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2023-02-28T13:54:39.179Z</updated>
+  <updated>2023-04-03T01:32:15.753Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -17,16 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>科学研究范式</title>
+    <link href="http://blog.ligene.cn/2023/03/30/paradigm1-4/"/>
+    <id>http://blog.ligene.cn/2023/03/30/paradigm1-4/</id>
+    <published>2023-03-29T16:05:24.000Z</published>
+    <updated>2023-04-03T01:32:15.753Z</updated>
+    
+    <content type="html"><![CDATA[<p>2007年，图灵奖获得者Jim Gray提出了科学研究的第四范式—数据密集型科学发现(Data-intensive Scientific Discovery)</p><span id="more"></span><p>2007年，图灵奖获得者Jim Gray提出了科学研究的第四范式—数据密集型科学发现(Data-intensive Scientific Discovery)[^1]。<br>在他看来，人类科学研究活动已经经历了三种不同范式的演变过程：以观察和实验为依据的“实验范式(experimental paradigm)”、以建模和归纳为特征的“理论范式(theoretical paradigm)”和以模拟仿真复杂现象为基础的“计算模拟范式(computer simulations of natural phenomena)”。<br>目前正从“计算模拟范式”转向“数据密集型科学发现范式”，是以数据考察为基础，联合理论、实验和模拟一体的数据密集计算的范式。<br>以天文学家为例，他们的研究方式发生了新的变化，其主要研究任务变为从海量数据中发现所需的物体或现象的照片，而不再需要亲自进行太空拍照。<br>科学研究范式如图所示：<br><img src="https://www.ligene.cn/images/blog/paradigm1-4.png" alt="科学研究范式"><br>[^1]: 链接：<a href="https://www.microsoft.com/en-us/research/publication/fourth-paradigm-data-intensive-scientific-discovery/">The Fourth Paradigm: Data-Intensive Scientific Discovery</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;2007年，图灵奖获得者Jim Gray提出了科学研究的第四范式—数据密集型科学发现(Data-intensive Scientific Discovery)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
+    
+    
+    <category term="Course" scheme="http://blog.ligene.cn/tags/Course/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux文本处理命令</title>
     <link href="http://blog.ligene.cn/2023/02/13/Linux-commands/"/>
     <id>http://blog.ligene.cn/2023/02/13/Linux-commands/</id>
     <published>2023-02-13T14:52:50.000Z</published>
-    <updated>2023-02-28T13:54:39.179Z</updated>
+    <updated>2023-04-03T01:31:49.096Z</updated>
     
-    <content type="html"><![CDATA[<p>常用的Linux命令学习资源</p><span id="more"></span><h2 id="线上Linux环境"><a href="#线上Linux环境" class="headerlink" title="线上Linux环境"></a>线上Linux环境</h2><p>CSDN网站提供一个线上Linux环境，可以在线练习Linux命令的使用。</p><ul><li>线上Linux环境: <a href="https://edu.csdn.net/lab/36675?targetLesson=2692">https://edu.csdn.net/lab/36675?targetLesson=2692</a></li><li>Linux入门: <a href="https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747">https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747</a></li></ul><h2 id="Linux文本处理命令"><a href="#Linux文本处理命令" class="headerlink" title="Linux文本处理命令"></a>Linux文本处理命令</h2><p>Linux 命令很多，掌握最实用的一批命令，对于每个实用命令，又只需掌握20%最高频操作。</p><h3 id="grep-匹配"><a href="#grep-匹配" class="headerlink" title="grep 匹配"></a>grep 匹配</h3><p>一款强大的文本搜索工具，能使用正则表达式匹配模式搜索文本，并把匹配的行打印出来 </p><ul><li>格式: grep [options] pattern [file]</li></ul><p>常用参数设置</p><ul><li>-v 反向选择，输出没有匹配的行, grep -v hello test.txt</li><li>-n 显示匹配成功的行所在的行号 </li><li>-c 统计匹配成功的行的数量 </li><li>-w 完全匹配 </li><li>-o 只输出匹配的内容 </li><li>-f 从文件中读取pattern </li><li>-E 指定正则表达式模式, grep -E “\d.” test.txt </li><li>-A 3 额外输出匹配行的后3行,A表示after, grep movie -A 3 test.txt</li><li>-B 3 额外输出匹配行的前3行, B表示before</li><li>-C 3 额外输出所在行的前后3行，C表示center</li></ul><h3 id="sed-流编辑器"><a href="#sed-流编辑器" class="headerlink" title="sed 流编辑器"></a>sed 流编辑器</h3><p>sed 命令可以用来替换文本行、删除文本行</p><ul><li>格式:sed [opition] ‘script’ file(s) | sed [-n] -f scriptfile file(s)</li></ul><p>常用参数设置</p><ul><li>-n 禁止显示所有输入内容，只显示经过sed处理的行</li><li>-e 直接在命令列模式上进行sed的动作编辑。接要执行的一个或者多个命令</li><li>-f 执行含有sed工作的文件</li><li>-r sed的动作支持的扩展正则</li><li>-i 直接修改读取的文件内容，不修改</li></ul><p>用法<br>sed ‘’<filename> &#x3D; cat <filename><br>script: [address[,address]] [!] command [arguments]</p><p>第一部分：作用区域</p><ul><li>按行号分，n,m n到m行，n,+m n到n加m行，n~m 从n行开始，每隔m行取一次匹配模式 ‘&#x2F;pattern&#x2F;command’</li></ul><p>第二部分：command,可以使用;号，同时使用多个命令</p><ul><li>p 打印p 打印</li><li>d 删除</li><li>i 在目标行之前插入新的行</li><li>a 在目标行之后插入新行</li><li>c 替换</li><li>w 写</li><li>r 读</li><li>&#x3D; 打印行号</li><li>s 匹配替换，s&#x2F;pattern&#x2F;replacement&#x2F;[flags],其中，n替换第几处，g 替换所有的。p,w。</li><li>y 转换, y&#x2F;inchars&#x2F;outchars&#x2F;,&#x2F;^&gt;&#x2F;!,反选</li></ul><h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><ul><li>查找并替换每行第一个”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;‘ 1.txt</li><li>查找替换每行中所有的”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;g’ 1.txt</li><li>删除含有”hello”的行：sed ‘&#x2F;hello&#x2F;d’ 1.txt</li><li>删除第2行：sed ‘2d’ 1.txt</li><li>删除第最后一行：sed ‘d’ 1.txt</li><li>删除第2行到最后一行：sed ‘2,d’ 1.txt</li></ul><h3 id="awk-文本分析语言"><a href="#awk-文本分析语言" class="headerlink" title="awk 文本分析语言"></a>awk 文本分析语言</h3><p>awk是一种编程语言，用于在linux下对文本和数据进行按行处理。简单理解就是对文本的每行执行命令awk指定的脚本，它的基本命令格式如下：</p><ul><li>格式:awk [options] ‘script’ var &#x3D; value file(s) | awk [options] -f scriptfile var &#x3D; value file(s)</li></ul><p>常用参数设置</p><p>-F 设定分隔符 </p><p>script结构</p><ul><li>awk ‘{script}’ </li><li>awk ‘&#x2F;pattern&#x2F;{script}’ </li><li>awk ‘BEGIN{script} {script} END {script}’ 可以执行三段代码</li></ul><p>内置变量，&#96;awk ‘BEGIN{内置变量}{}’</p><ul><li>FS 定义输入字段分隔符。同-F</li><li>RS 定义输入记录分隔符</li><li>OFS 定义输出字段分隔符</li><li>ORS 定义输出字段分隔符</li><li>NF 数据文件中的字段总数，可以理解为列数</li><li>NR 已处理的载入记录数，行数</li><li>-v 自定义变量或传递外部变量</li></ul><h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4><ol><li>打印每行的最后1列(默认用空格分离): awk ‘{print $NF}’ 1.txt</li><li>打印每行的行号: awk ‘{print NR}’ 1.txt</li><li>对第三列的相同数据对应的第一列求和:<br>awk ‘{sum[$3]+&#x3D;$1}END{for(c in sum){print c,sum[c]}}</li></ol>]]></content>
+    <content type="html"><![CDATA[<p>掌握基本的grep，sed，awk操作。<br>我之所以推荐这三个命令是因为，它们很适合快速进行简单的文本操作，可以让很多工作直接快速地在命令行上完成，而不需要编写程序。比如抽取一个文本文件特定的几列信息、匹配相关信息、修改输出等，用awk实现起来非常简单。<br>掌握了这些之后，你再学习如何利用Linux命令和相关程序组建简单的shell任务流程，到这个阶段，Linux部分基本就OK了。</p><span id="more"></span><h2 id="常用的Linux命令学习资源"><a href="#常用的Linux命令学习资源" class="headerlink" title="常用的Linux命令学习资源"></a>常用的Linux命令学习资源</h2><p>CSDN网站提供一个线上Linux环境，可以在线练习Linux命令的使用。</p><ul><li>线上Linux环境: <a href="https://edu.csdn.net/lab/36675?targetLesson=2692">https://edu.csdn.net/lab/36675?targetLesson=2692</a></li><li>Linux入门: <a href="https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747">https://edu.csdn.net/skill/gml/gml-5d30b74764e645f49839c545d784f29e?category=747</a></li></ul><h2 id="Linux文本处理命令"><a href="#Linux文本处理命令" class="headerlink" title="Linux文本处理命令"></a>Linux文本处理命令</h2><p>Linux 命令很多，掌握最实用的一批命令，对于每个实用命令，又只需掌握20%最高频操作。</p><h3 id="grep-匹配"><a href="#grep-匹配" class="headerlink" title="grep 匹配"></a>grep 匹配</h3><p>一款强大的文本搜索工具，能使用正则表达式匹配模式搜索文本，并把匹配的行打印出来 </p><ul><li>格式: grep [options] pattern [file]</li></ul><p>常用参数设置</p><ul><li>-v 反向选择，输出没有匹配的行, grep -v hello test.txt</li><li>-n 显示匹配成功的行所在的行号 </li><li>-c 统计匹配成功的行的数量 </li><li>-w 完全匹配 </li><li>-o 只输出匹配的内容 </li><li>-f 从文件中读取pattern </li><li>-E 指定正则表达式模式, grep -E “\d.” test.txt </li><li>-A 3 额外输出匹配行的后3行,A表示after, grep movie -A 3 test.txt</li><li>-B 3 额外输出匹配行的前3行, B表示before</li><li>-C 3 额外输出所在行的前后3行，C表示center</li></ul><h3 id="sed-流编辑器"><a href="#sed-流编辑器" class="headerlink" title="sed 流编辑器"></a>sed 流编辑器</h3><p>sed 命令可以用来替换文本行、删除文本行</p><ul><li>格式:sed [opition] ‘script’ file(s) | sed [-n] -f scriptfile file(s)</li></ul><p>常用参数设置</p><ul><li>-n 禁止显示所有输入内容，只显示经过sed处理的行</li><li>-e 直接在命令列模式上进行sed的动作编辑。接要执行的一个或者多个命令</li><li>-f 执行含有sed工作的文件</li><li>-r sed的动作支持的扩展正则</li><li>-i 直接修改读取的文件内容，不修改</li></ul><p>用法<br>sed ‘’<filename> &#x3D; cat <filename><br>script: [address[,address]] [!] command [arguments]</p><p>第一部分：作用区域</p><ul><li>按行号分，n,m n到m行，n,+m n到n加m行，n~m 从n行开始，每隔m行取一次匹配模式 ‘&#x2F;pattern&#x2F;command’</li></ul><p>第二部分：command,可以使用;号，同时使用多个命令</p><ul><li>p 打印p 打印</li><li>d 删除</li><li>i 在目标行之前插入新的行</li><li>a 在目标行之后插入新行</li><li>c 替换</li><li>w 写</li><li>r 读</li><li>&#x3D; 打印行号</li><li>s 匹配替换，s&#x2F;pattern&#x2F;replacement&#x2F;[flags],其中，n替换第几处，g 替换所有的。p,w。</li><li>y 转换, y&#x2F;inchars&#x2F;outchars&#x2F;,&#x2F;^&gt;&#x2F;!,反选</li></ul><h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><ul><li>查找并替换每行第一个”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;‘ 1.txt</li><li>查找替换每行中所有的”hello”为”你好”： sed ‘s&#x2F;hello&#x2F;你好&#x2F;g’ 1.txt</li><li>删除含有”hello”的行：sed ‘&#x2F;hello&#x2F;d’ 1.txt</li><li>删除第2行：sed ‘2d’ 1.txt</li><li>删除第最后一行：sed ‘d’ 1.txt</li><li>删除第2行到最后一行：sed ‘2,d’ 1.txt</li></ul><h3 id="awk-文本分析语言"><a href="#awk-文本分析语言" class="headerlink" title="awk 文本分析语言"></a>awk 文本分析语言</h3><p>awk是一种编程语言，用于在linux下对文本和数据进行按行处理。简单理解就是对文本的每行执行命令awk指定的脚本，它的基本命令格式如下：</p><ul><li>格式:awk [options] ‘script’ var &#x3D; value file(s) | awk [options] -f scriptfile var &#x3D; value file(s)</li></ul><p>常用参数设置</p><p>-F 设定分隔符 </p><p>script结构</p><ul><li>awk ‘{script}’ </li><li>awk ‘&#x2F;pattern&#x2F;{script}’ </li><li>awk ‘BEGIN{script} {script} END {script}’ 可以执行三段代码</li></ul><p>内置变量，&#96;awk ‘BEGIN{内置变量}{}’</p><ul><li>FS 定义输入字段分隔符。同-F</li><li>RS 定义输入记录分隔符</li><li>OFS 定义输出字段分隔符</li><li>ORS 定义输出字段分隔符</li><li>NF 数据文件中的字段总数，可以理解为列数</li><li>NR 已处理的载入记录数，行数</li><li>-v 自定义变量或传递外部变量</li></ul><h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4><ol><li>打印每行的最后1列(默认用空格分离): awk ‘{print $NF}’ 1.txt</li><li>打印每行的行号: awk ‘{print NR}’ 1.txt</li><li>对第三列的相同数据对应的第一列求和:<br>awk ‘{sum[$3]+&#x3D;$1}END{for(c in sum){print c,sum[c]}}</li></ol>]]></content>
     
     
-    <summary type="html">&lt;p&gt;常用的Linux命令学习资源&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;掌握基本的grep，sed，awk操作。&lt;br&gt;我之所以推荐这三个命令是因为，它们很适合快速进行简单的文本操作，可以让很多工作直接快速地在命令行上完成，而不需要编写程序。比如抽取一个文本文件特定的几列信息、匹配相关信息、修改输出等，用awk实现起来非常简单。&lt;br&gt;掌握了这些之后，你再学习如何利用Linux命令和相关程序组建简单的shell任务流程，到这个阶段，Linux部分基本就OK了。&lt;/p&gt;</summary>
     
     
     
@@ -418,27 +439,6 @@
     <category term="16S" scheme="http://blog.ligene.cn/tags/16S/"/>
     
     <category term="WSL" scheme="http://blog.ligene.cn/tags/WSL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows下连接远程Linux桌面</title>
-    <link href="http://blog.ligene.cn/2018/01/25/Xming-PuTTY/"/>
-    <id>http://blog.ligene.cn/2018/01/25/Xming-PuTTY/</id>
-    <published>2018-01-25T00:45:16.000Z</published>
-    <updated>2023-02-13T14:46:42.295Z</updated>
-    
-    <content type="html"><![CDATA[<p>一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。</p><span id="more"></span><h2 id="1-Windows安装Xming"><a href="#1-Windows安装Xming" class="headerlink" title="1. Windows安装Xming"></a>1. Windows安装Xming</h2><p>从SourceForge下载Xming-setup.exe（最新的版本是6.9.0.31）。<br>Xming的SourceForge网址： <a href="http://sourceforge.net/projects/xming/">http://sourceforge.net/projects/xming/</a><br>本地安装，安装过程一切按默认选项。<br>第一次运行时，找到开始菜单里面的XLaunch来启动，产生一个初始的配置文件。对于简单的使用来说，不需要任何特殊的配置，使用默认即可。<br>下图中选择“one window”，设置“Display number”中的数字为0。<br><img src="https://www.ligene.cn/images/blog/Xming.png" alt="Xming Setup"><br>  启动完成后，在任务栏右边会出现一个“X”形状的图标，这表示Xming已经在运行了，将鼠标悬停上去，能看到当前使用的“Display number”使用默认的0.0。</p><h2 id="2-Linux服务器配置"><a href="#2-Linux服务器配置" class="headerlink" title="2. Linux服务器配置"></a>2. Linux服务器配置</h2><p> 修改ssh服务的配置文件：<br><code>$vi /etc/ssh/sshd_config</code><br>取消下面一行的注释，如果没有这一行则手动添加：<br>X11Forwrding yes<br>这样配置的作用就是允许SSH的X转发。</p><h2 id="3-PuTTY设置"><a href="#3-PuTTY设置" class="headerlink" title="3. PuTTY设置"></a>3. PuTTY设置</h2><p>SSH客户端使用PuTTY，PuTTY是freeware+greenware。<br>PuTTY下载网址：<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a><br>配置 Session：配置linux服务器IP，连接方式为SSH<br>Connection &gt; Data：保存连接使用的用户名<br>Connection &gt; SSH &gt; X11：Enable X11 Forwarding，X display Location 为 “localhost:0”，这里的 0 就是配置 Xming X server 时指定的 Display Number。<br>保存设置：选Session，Saved sessions输入一个名称，并按右边Save按钮。每次更改PuTTY设置都需要这样保存，下次Load这个Session才是同样的设置。<br><img src="https://www.ligene.cn/images/blog/putty.png" alt="putty Setup"><br> 至此配置完成。<br>在windows上使用PuTTY连接到Linux服务器，输入xclock &amp;，可以看到X server工作效果了，显示一个时钟图形界面。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;一般我们是通过命令行界面来使用Linux服务器，但有时也需要用Linux图形界面的软件，如IGV。当需要显示的基因组信息比较大，如测序reads的基因组比对情况，会占用大量内存，在服务器上运行会比较流畅。下面是本地windows电脑显示远程Linux服务器桌面的方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux" scheme="http://blog.ligene.cn/categories/Linux/"/>
-    
-    
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
     
   </entry>
   
