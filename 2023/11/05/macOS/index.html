@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>macOS setup | LIGENE</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://hm.baidu.com/hm.js?' + '0ad9c65dc343a2a6d37cb95527713113';
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">macOS setup</h1><a id="logo" href="/.">LIGENE</a><p class="description">Notes of Bioinformatics and Genomics</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/../bigbook/"><i class="fa fa-book"> 教程</i></a><a href="/downloads/"><i class="fa fa-download"> 下载</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">macOS setup</h1><div class="post-meta">2023-11-05<span> | </span><span class="category"><a href="/categories/Bioinformatics/">Bioinformatics</a></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 283</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 1</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" href="/2023/11/05/macOS/#vcomment"><span class="valine-comment-count" data-xid="/2023/11/05/macOS/"></span><span> 条评论</span></a><div class="post-content"><p>终端(Terminal)为macOS使用命令行的界面，与Linux基本命令相同，但是软件安装存在一些差异。</p>
+<span id="more"></span>
+<h2 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h2><ul>
+<li><p>Mac电脑如何打开终端：command+空格 在聚焦搜索中输入terminal回车。</p>
+</li>
+<li><p>macOS环境变量配置与Linux系统配置方法一致，但配置文件为用户主目录下的“.bash_profile”。<br>$vim ~&#x2F;.bash_profile</p>
+</li>
+<li><p>编辑完成并保存后，需要运行source命令。<br>$source ~&#x2F;.bash_profile</p>
+</li>
+<li><p>手动安装XCODE Command Line Tools:<br>$xcode-select –install</p>
+</li>
+</ul>
+<h3 id="macOS的包管理器Homebrew"><a href="#macOS的包管理器Homebrew" class="headerlink" title="macOS的包管理器Homebrew"></a>macOS的包管理器Homebrew</h3><p>macOS安装Homebrew只需要在终端运行以下一行命令：<br>$&#x2F;usr&#x2F;bin&#x2F;ruby -e “$(curl -fsSL <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;">https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</a><br>因国外的网址较慢，如不能安装，可使用国内的网址进行安装：<br>$&#x2F;bin&#x2F;zsh -c “$(curl -fsSL <a target="_blank" rel="noopener" href="https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;">https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;</a></p>
+<ul>
+<li>Homebrew安装软件的方法：<br>$brew install bwa</li>
+</ul>
+<h3 id="Miniconda"><a href="#Miniconda" class="headerlink" title="Miniconda"></a>Miniconda</h3><p>Mac电脑上conda配置与创建虚拟环境与Linux系统相同。</p>
+<ul>
+<li><p>安装Miniconda:<br>$wget <a target="_blank" rel="noopener" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh">https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh</a><br>$sh Miniconda3-latest-MacOSX-x86_64.sh</p>
+</li>
+<li><p>添加Bioconda通道：<br>$conda config –add channels defaults<br>$conda config –add channels bioconda<br>$conda config –add channels conda-forge</p>
+</li>
+<li><p>Conda安装软件的方法：<br>$conda install bwa</p>
+</li>
+</ul>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>macOS setup</p><p><span>文章作者：</span>adong</p><p><span>发布时间：</span>2023-11-05</p><p><span>最后更新：</span>2023-11-05</p><p><span>原始链接：</span><a href="/2023/11/05/macOS/">http://blog.ligene.cn/2023/11/05/macOS/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="http://blog.ligene.cn/2023/11/05/macOS/"></i></span></p><p><span>版权声明：</span>本站所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 CN 许可协议。转载请注明出处！</p></div><br><div class="tags"><a href="/tags/macOS"><i class="fa fa-tag">macOS</i></a><a href="/tags/Conda"><i class="fa fa-tag">Conda</i></a></div><div class="post-nav"><a class="next" href="/2023/03/30/paradigm1-4/">科学研究范式</a></div><div id="vcomment"></div><script src="//c.lcfile.com/static/js/av-core-mini-0.6.4.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'MNJKe5WJm5b2Ef1eGugrbjeW-9Nh9j0Va',
+  appKey:'JidWqAC9XmARrOScdPmYsjOc',
+  placeholder:'Writing comments here',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})
+</script></div></div></div><script type="text/javascript" src="/js/toc.js?v=1.0.0" async></script><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar-toc"><div class="stoc-article" id="sidebar-stoc"><strong class="stoc-title"><i class="fa fa-bars"> CONTENTS </i></strong><div class="toc-nav" id="stoc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">终端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#macOS%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8Homebrew"><span class="toc-number">1.1.</span> <span class="toc-text">macOS的包管理器Homebrew</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Miniconda"><span class="toc-number">1.2.</span> <span class="toc-text">Miniconda</span></a></li></ol></li></ol></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a rel="nofollow" target="_blank" href="https://www.ligene.cn">LIGENE |</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo |</a> Theme <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Maupassant.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
