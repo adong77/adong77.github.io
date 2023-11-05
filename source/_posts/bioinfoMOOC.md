@@ -6,7 +6,7 @@ date: 2023-01-14 17:55:51
 tags: Course
 categories: Bioinformatics
 ---
-推荐四门比较好的生物信息学慕课。前两门是北大与山大的国家精品课程；后两门是中国科学院大学(UCAS)刘翟老师与华中科技大学(HUST)薛宇老师的生物信息学课堂实录视频。
+推荐五门比较好的生物信息学慕课。前两门是北大与山大的国家精品课程；后三门分别是中国科学院大学(UCAS)刘翟老师、华中科技大学(HUST)薛宇老师与暨南大学张弓老师的生物信息学课堂实录视频。
 <!--more-->
 ### 《生物信息学：导论与方法》-高歌-北京大学
 
@@ -18,10 +18,11 @@ categories: Bioinformatics
 
 ### 《生物信息学》-薛宇-华中科技大学
 
+华中科技大学薛宇老师的生物信息学课堂实录视频。很棒的课程，建议1.5X倍速播放学习。
 * 下载课件：http://xue.biocuckoo.org/course.html
 
 哔哩哔哩网址：
-<iframe src="//player.bilibili.com/player.html?aid=846102281&bvid=BV1H54y1G7XS&cid=351324061&page=1" width="600px" height="480px" scrolling="no"  frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=846102281&bvid=BV1H54y1G7XS&cid=351324061&page=1&autoplay=0" width="600px" height="480px" scrolling="no"  frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
 ### 《生物信息学》-刘翟-中国科学院大学
@@ -75,3 +76,10 @@ https://www.zhihu.com/zvideo/1400533197780770817
 
 https://www.zhihu.com/zvideo/1400534557929771008
 
+
+### 《生物信息学》-张弓-暨南大学
+
+暨南大学张弓老师的生物信息学课堂实录视频。很棒的课程，建议1.5X倍速播放学习。
+
+哔哩哔哩网址：
+<iframe src="//player.bilibili.com/player.html?aid=629998418&bvid=BV13b4y1D7RX&cid=319299757&page=1&autoplay=0" width="600px" height="480px" scrolling="no"  frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>

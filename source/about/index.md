@@ -20,7 +20,7 @@ Welcome! This is my personal blog, where I hope to share ideas and resources tha
 <b>Links:</b>
 <ul>
  <li><strong>BiGbook</strong>: <a href="https://www.ligene.cn/bigbook" target="_blank">https://www.ligene.cn/bigbook</a><br /></li>
- <li><strong>LiLab</strong>: <a href="http://lab.ligene.cn/" target="_blank">http://lab.ligene.cn/</a><br /> </li>
+ <li><strong>LiLab</strong>: <a href="https://gitee.com/thelilab/" target="_blank">https://gitee.com/thelilab/</a><br /> </li>
  <li><strong>ORCID</strong>: <a href="https://orcid.org/0000-0002-9835-7491" target="_blank">https://orcid.org/0000-0002-9835-7491</a><br /></li>
 </ul>
 </div>
