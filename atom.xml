@@ -6,7 +6,7 @@
   <link href="http://blog.ligene.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ligene.cn/"/>
-  <updated>2023-11-05T15:25:33.217Z</updated>
+  <updated>2024-12-24T12:54:00.776Z</updated>
   <id>http://blog.ligene.cn/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LLM2024</title>
+    <link href="http://blog.ligene.cn/2024/12/24/LLM2024/"/>
+    <id>http://blog.ligene.cn/2024/12/24/LLM2024/</id>
+    <published>2024-12-24T12:25:22.000Z</published>
+    <updated>2024-12-24T12:54:00.776Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要:2024年即将过去，发现这一年没有写过一篇博客。今天赶紧补上一篇，也记录一下这一年做了什么。感觉今年什么都没有做好，可能最重要的是尝试进行AI与大语言模型方面的工作。希望明年能有所成吧!</p><span id="more"></span><p>也没有什么好写的，下面就引用一下别人将生命科学类比LLM智能的思考：</p><blockquote><p>从生物化学(生命科学)视角审视，类似宇宙中各种元素在电磁作用，如太阳光，紫外线、雷击等能量促使下，完成从无序到有序、从非生命到生命的分子进化，和从简单到复杂，从低级到高级的生物进化，产生具有智能的人类。大模型(LLM)几百几千亿的数值参数，在显卡电能的驱动下，不断迭代优化，自形成具有各种特定功能性的复杂组织结构，对外呈现出一定的智能形态。</p></blockquote><p>有句名言“生命的起源必然是通过化学的途径实现的”。各种元素在宇宙中广泛存在，这些原子在太空中广泛地结合成分子，不管是在星际中，还是在恒星、行星上，太空陨石就是明证。而在原始地球上，大气成分就包括氢气、水、甲烷、氨气、氮气、一氧化碳、二氧化碳、硫化氢等。在电磁相互作用下，比如太阳光，紫外线、雷击、火山爆发、宇宙射线等，都在提供着能量，促使这些无机小分子频繁地发生着化学反应，直至自发组织成为有机分子。有了大量的有机分子之后，在具备某些条件后，合成更为复杂的有机大分子成为了可能。有机大分子慢慢地进行分子进化，直至产生了具有生物活性的蛋白质、核酸等生物大分子。这便是分子进化。<br>基于上述分子进化的基础，一旦形成生物大分子，就有一定的生物活性，比如蛋白质呈现出酶的催化活性，核酸分子呈现出一定的自复制能力。当这些生物有机大分子和无机物在温度、酸碱度、阳光等一定环境下反应交互，便孕育了细胞结构，这便导致了生命起源。而生命的出现，是自然系统演化史上的一次重大飞跃。在后续漫长的岁月中，生物不断进化，直至产生有智能的人类。<br>我们会发现，分子进化，从无序到有序，从非生命到生命；生物进化，从简单到复杂，从低级到高级。整体看来，整个过程是从无序的、随机的原子，到具有一定功能、呈现一定系统结构的生命体。当这些具有一定功能足够复杂的生命体开始进化，从最低级生物的反应性，到不太高级动物的条件反射，再到高级动物能够被刻意训练，再到主观意识产生行为并利用工具改造环境，终于到了有意识性、精神性的智能人类。<br>而大模型(LLM)，最一开始是由几百亿、几千亿无序、随机的数值构成，在整个训练过程中，慢慢迭代进化变得有序，彼此之间交互联系，直至在巨大的参数空间中形成具有一定功能的结构。相对于分子进化和生物进化中提供能量的是电磁作用，而大模型(LLM)参数进化的能量来自显卡的电能，最终这个人工设计的系统产生了信息，类似产生了智能。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要:2024年即将过去，发现这一年没有写过一篇博客。今天赶紧补上一篇，也记录一下这一年做了什么。感觉今年什么都没有做好，可能最重要的是尝试进行AI与大语言模型方面的工作。希望明年能有所成吧!&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>macOS setup</title>
@@ -418,27 +435,6 @@
     
     
     <category term="AI" scheme="http://blog.ligene.cn/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>科学上网简易方法</title>
-    <link href="http://blog.ligene.cn/2019/06/09/SetupVPN/"/>
-    <id>http://blog.ligene.cn/2019/06/09/SetupVPN/</id>
-    <published>2019-06-09T05:22:55.000Z</published>
-    <updated>2023-01-17T23:41:57.324Z</updated>
-    
-    <content type="html"><![CDATA[<p>如果你不能打开一些国外的网址，如google，那么就需要科(翻)学(墙)上网了。SetupVPN(或Hoxx)是一个简单易用的免费工具。SetupVPN&#x2F;Hoxx插件适用于浏览器Chrome或Firefox，此处介绍使用Firefox与SetupVPN。</p><span id="more"></span><h2 id="1-获取一个Firefox拓展程序"><a href="#1-获取一个Firefox拓展程序" class="headerlink" title="1.获取一个Firefox拓展程序"></a>1.获取一个Firefox拓展程序</h2><p>在地址栏输入<a href="http://69.28.91.10/%EF%BC%8C%E4%BC%9A%E5%87%BA%E7%8E%B0%E5%A6%82%E4%B8%8B%E9%A1%B5%E9%9D%A2%EF%BC%9A">http://69.28.91.10/，会出现如下页面：</a><br><img src="https://www.ligene.cn/images/blog/setupVPN-1.png" alt="SetupVPN-1"><br>请按照红圈依次点击，找到Firefox的拓展程序文件setupvpn_lifetime_free_vpn-3.5.3-fx.xpi（或其它版本文件），按鼠标右键在弹出菜单选择“链接另存为”，下载这个文件。</p><h2 id="2-安装Firefox的拓展程序"><a href="#2-安装Firefox的拓展程序" class="headerlink" title="2.安装Firefox的拓展程序"></a>2.安装Firefox的拓展程序</h2><p>在Firefox地址栏中输入about:addons，打开拓展程序界面。只要把刚刚下载的.xpi文件拖入这个界面里，并在弹出的安装确认选项中选择添加(Add)按钮就OK了。<br><img src="https://www.ligene.cn/images/blog/setupVPN-2.png" alt="SetupVPN-2"></p><h2 id="3-注册并使用SetupVPN扩展程序"><a href="#3-注册并使用SetupVPN扩展程序" class="headerlink" title="3.注册并使用SetupVPN扩展程序"></a>3.注册并使用SetupVPN扩展程序</h2><p>安装成功后，就在Firefox浏览器右上角可以看到一个云状图标。首次点击SetupVPN图标需要用一个邮箱注册新账户，并通过邮件激活帐户，后续也不会有垃圾邮件。<br><img src="https://www.ligene.cn/images/blog/setupVPN-3.png" alt="SetupVPN-3"><br>注册帐户登录后，可以在下方免费服务器里选择一个国家，建议选择日本，会比较快一点。建立连接后即可开始畅游外面的世界。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;如果你不能打开一些国外的网址，如google，那么就需要科(翻)学(墙)上网了。SetupVPN(或Hoxx)是一个简单易用的免费工具。SetupVPN&amp;#x2F;Hoxx插件适用于浏览器Chrome或Firefox，此处介绍使用Firefox与SetupVPN。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tutorials" scheme="http://blog.ligene.cn/categories/Tutorials/"/>
-    
-    
-    <category term="Tools" scheme="http://blog.ligene.cn/tags/Tools/"/>
     
   </entry>
   
